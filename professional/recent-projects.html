@@ -1,0 +1,477 @@
+<HTML>
+<HEAD>
+<TITLE>Links </TITLE>
+   <meta name="Author" content="">
+<!--<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">-->
+   <meta name="GENERATOR" content="Mozilla/2.0GoldB2 (Win32)">
+</HEAD>
+<BODY> 
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<font face="Comic sans MS">
+
+<font color=purple> 
+
+<SCRIPT language="JavaScript"><!--
+/*********************************************************
+     GateKeeper v2.3 - by Joe Barta
+     http://www.pagetutor.com/keeper/
+     Permission is granted to freely use this script.
+**********************************************************/
+
+     function GateKeeper() {
+     var username = prompt("Enter your username:", "");
+     var password = prompt("Password required:", "Enter your secret code here");
+     if (password) { this.location.href = username + "/" +  password + ".html"; }}
+//--></SCRIPT>
+
+<center><p><font COLOR="#009999">
+<h1>
+Some research projects 
+</h1>
+</P></center>
+<P>
+<h1>Bioinformatics/Computational Biology/Systems Biology/Approximation Algorithms
+</h1>
+
+<P>
+My broad research goals in these areas is to develop new <b>combinatorial/geometric</b>
+algorithmic techniques as well as to use existing such techniques to design 
+efficient exact or approximation algorithms for computationally challenging
+problems. My research plans include
+designing provably efficient algorithms for
+these bioinformatics problems, as well as 
+implementing these algorithms and testing them again 
+benchmark data. 
+<b>Advantages of using combinatorial or geometric algorithmic
+approaches</b> for 
+the computationally difficult problems are plenty. Typically combinatorial or 
+geometric algorithms are <i>simple</i> to implement and thus run <i>faster</i>; 
+it is the proof that the
+algorithm is correct as well as proof of guarantees of its performance 
+or resource bounds that is often non-trivial. Unlike many other approaches,
+resource and performance bounds (such as worst-case or average case bounds for 
+deterministic algorithms and expected case bounds for randomized algorithms)
+for these algorithms is <i>guaranteed</i>. Moreover, a combinatorial
+or geometric interpretation of the problem often provides more intuition
+about the nature of the problem such as the structure of the optimal
+solution or the effect of errors in the input data on the optimal 
+solution. 
+
+<p>
+Below are <b>only some</b> specific problems/projects that I have investigated.
+
+<h2>
+<font color=red>
+Bioinformatics/Computational Biology
+</font>
+</h2>
+<DL>
+<DT>
+<font color=blue>
+<b>Test Set Problems</b>
+</font>
+<DD>
+In the most basic versions of the test set problems, we are given a universe of objects,
+family of subsets ("tests") of the universe and a notion of "distinguishability"
+of pairs of elements of the universe by a collection of these tests.
+Our goal is to select a subset of these tests of minimum size or cost
+that distinguishes every pair of elements of the universe.
+Such combinatorial formulations allow us to investigate, at one shot,
+several important problems in bioinformatics such as:
+<dl>
+<dt>
+<font color=green>
+<b>
+Minimum Test Collection Problem 
+</b>
+</font>
+<dd>
+applications in diagnostic testing
+<dt>
+<font color=green>
+<b>
+Condition Cover Problems
+</b>
+</font>
+<dd>
+for verifying a multi-output feedforward Boolean circuit as a model of
+biological pathways
+<dt>
+<font color=green>
+<b>
+String Barcoding Problems 
+</b>
+</font>
+<dd>
+in detecting unknown pathogen sequences
+<dt>
+<font color=green>
+<b>
+Minimum Cost Probe Set Problem with a Threshold  
+</b>
+</font>
+<dd>
+for minimizing the number of oligonucleotide
+probes needed for analyzing populations of ribosomal RNA gene (rDNA)
+clones by hybridization experiments on DNA microarrays
+</dl>
+<DT>
+<font color=blue>
+<b>Protein Sequence Design Problems</b>
+</font>
+<dd>
+In protein landscapes analysis, one wishes to analyze
+the structures of the space of all protein sequences and their native 3D 
+structures.
+A basic computational problem at this level, called the <b>protein 
+sequence design (PSD)</b> or the <b>inverse protein folding problem</b>,
+is to take a target
+3D structure as input and ask for a <i>fittest</i> sequence with respect to
+one or more <i>fitness functions</i> of the target structure.
+One possible way to attack the problem
+by defining a heuristic sequence design (HSD) problem with
+the implicit assumption being that a sequence that satisfies the
+HSD problem also solves PSD.
+<DT>
+<font color=blue>
+<b>Substructure Similarity Identification Problems</b>
+</font>
+<dd>
+A <i>basic</i> version of these problems is as follows.
+Our input consists of two biological structures 
+<b>S<sub>1</sub></b>  and <b>S<sub>2</sub></b> (such as
+two DNA sequences) and a <i>similarity</i> function 
+<FONT FACE="Symbol">s</FONT>&nbsp :&nbsp 
+<FONT FACE="Symbol">t</FONT><sub>1</sub>
+&times 
+<FONT FACE="Symbol">t</FONT><sub>2</sub>
+<FONT FACE="Symbol">&#174;</FONT>
+<b><i>R</i></b>
+mapping substructures 
+<FONT FACE="Symbol">t</FONT><sub>1</sub>
+of 
+<b>S<sub>1</sub></b>
+and 
+<FONT FACE="Symbol">t</FONT><sub>2</sub>
+of 
+<b>S<sub>2</sub></b> 
+to a real number.
+Our goal is to identify a set of pairs of <i>disjoint</i>
+substructures, each pair containing a substructure from each of
+the given structures, such that the <i>total</i> similarity is 
+<i>maximized</i>.
+Problems of this nature appear abundantly 
+in bioinformatics applications such as:
+<dl>
+<dt>
+<font color=green>
+<b>
+Subsequence Similarity Identification Problems
+</b>
+</font>
+<dd>
+S<sub>1</sub>  and S<sub>2</sub> are (DNA or protein) sequences 
+and a substructure refers to a <i>contiguous</i> subsequence (substring). 
+Elucidating similarities between sequences is 
+a fundamental problem in bioinformatics; 
+algorithmic analysis of these type of problems provide the basis
+of development of popular alignment softwares such as 
+BLAST and PipMaker.
+Examples of specific problems of this type that are of interest are:
+<blockquote>
+<b>Consistent Local Alignment Sets:</b>
+this problems has applications in genome sequencing approach in which
+one compares conserved regions of contigs
+of a species 
+with the assembled sequence of another <i>closely related</i> species
+to determine the relative order and orientations of the contigs.
+<br>
+<b>Nonoverlapping Local Alignments:</b>
+This is the sequence similarity identification problem with 
+the added assumption that no two subsequences 
+<FONT FACE="Symbol">t</FONT><sub>1</sub>
+and 
+<FONT FACE="Symbol">t</FONT>'<sub>1</sub>
+of the same input sequence can enclose each other; the assumption
+is justified by preprocessing the biological data and
+simplifies the complexity of the problem.
+This problem has applications in computing local alignments between
+sequences.
+</blockquote>
+<dt>
+<font color=green>
+<b>
+Topology independent protein structural alignment
+</b>
+</font>
+<dd>
+Here each structure is a 3D protein structure.
+Identifying structurally similar proteins with different chain
+topologies can aid studies in homology modeling, protein folding,
+protein design, and protein evolution.  These include circular
+permuted protein structures, and the more general cases of non-cyclic
+permutations between similar structures, which are related by
+non-topological rearrangement beyond circular permutation.  We present
+a method based on an approximation algorithm that finds sequence-order
+independent structural alignments that are close to optimal.  We
+formulate the structural alignment problem as a special case of the
+maximum-weight independent set problem, and solve this computationally
+intensive problem approximately by iteratively solving relaxations of
+a corresponding integer programming problem.  The resulting structural
+alignment is sequence order independent.  Our method is also
+insensitive to insertions, deletions, and gaps. 
+Using a novel
+similarity score and a statistical model for significance $p$-value,
+we are able to discover previously unknown circular permuted proteins
+between nucleoplasmin-core protein and auxin binding protein, between
+aspartate rasemase and 3-dehydrogenate dehydralase, as well as between
+migration inhibition factor and arginine repressor which involves an
+additional strand-swapping.  We also report the finding of
+non-cyclic permuted protein structures existing in nature between
+AML1/core binding factor and ribofalvin synthase.  Our method can be
+used for large scale alignment of protein structures regardless of the
+topology.       
+The approximation algorithm introduced in this work can find good
+solutions for the problem of protein structure alignment.
+Furthermore, this algorithm can detect topological differences
+between two spatially similar protein structures.  The alignment
+between MIF and the arginine repressor demonstrates our
+algorithm's ability to detect structural similarities even when
+spatial rearrangement of structural units has occurred. 
+The effectiveness of our method is also demonstrated by the discovery
+of previously unknown circular permutations. 
+In addition, we report in this study the finding of a naturally
+occurring non-cyclic permuted protein between AML1/Core Binding
+Factor chain F and riboflavin synthase chain A.
+</DL>
+<DT>
+<font color=blue>
+<b>Computing similarities/distances between biological objects</b>
+</font>
+<DD>
+I am interested in defining suitable similarity/distance measures 
+between biological objects and efficiently computing them. Motivations
+for looking at this type of problems include validating alternate 
+experimental/computational approaches and detecting specific evolutionary
+events. Some of the problems that I have looked at it in this direction
+are as follows.
+<dl>
+<dt>
+<font color=green>
+<b>
+Comparison of Phylogenetic Trees
+</b>
+</font>
+<dd>
+We have looked at designing efficient approximation algorithms for computing
+the <i>nearest-neighbour-interchange</i> (NNI) distance including possible extensions
+to weighted phylogenies. We also formulated the <i>linear-cost subtree-transfer
+distance</i> to model recombination events and designed efficient approximation
+algorithms for this.
+<dt>
+<font color=green>
+<b>
+Syntenic distance between multi-chromosome genomes
+</b>
+</font>
+<dd>
+This has applications in finding the number of fissions, fusions and 
+translocations to transform a multi-chromosome genome to another.
+</dl>
+
+<DT>
+<font color=blue>
+<b>Lateral Gene Transfer Problems in Phylogenetic Trees</b>
+</font>
+<DD>
+Our goal is to investigate the Lateral Gene Transfer Problems in phylogenies. 
+For example, one such minimization problem, defined by
+Hallet and Lagergren, is that of finding the <i>most parsimonious</i> lateral gene transfer scenario
+for a given pair of gene and species trees; we were able to prove some inapproximability
+results for this problem.
+
+</DL>
+<h2>
+<font color=red>
+Systems Biology
+</h2>
+</font>
+<p>
+Our investigation is concerned with algorithmic, computational complexity
+and experimental questions
+that arise in the analysis of biological networks. Our goal is to
+formulate precise
+theoretical problems and propose a set of experiments to validate the
+approaches suggested in it.
+In particular, we will look at the following aspects:
+<ul>
+<li>
+the formulation of decision and optimization problems for the
+identification and verification of biological pathways, such as those that may
+result from reverse-engineering studies,
+<li>
+the formulation of combinatorial optimization problems that arise in the
+experimental design for reverse engineering of gene and protein networks,
+including the characterization of its computational complexity
+and the design of provably efficient deterministic or randomized algorithms,
+<li>
+carrying out a set of experiments on a particular biological pathway, to
+obtain real biological data on which to apply the algorithms.
+</ul>
+
+<DL>
+<DT>
+<font color=blue>
+<b>
+Reverse Engineering Problems
+</b>
+</font>
+<DD>
+This research is motivated by a central concern of contemporary cell biology,
+that of unraveling (or "reverse engineering") the web of interactions among
+the components of complex protein and genetic regulatory networks.
+Notwithstanding the remarkable progress in genetics and molecular biology in
+the sequencing of the genomes of a number of species, the inference and
+quantification of interconnections in signaling and genetic networks that are
+critical to cell function is still a challenging practical and theoretical
+problem.
+High-throughput technologies allow the monitoring the expression levels
+of sets of genes, and the activity states of signaling proteins, providing
+snapshots of the transcriptional and signaling behavior of living cells.
+Statistical and machine learning techniques, such as clustering, are often used
+in order to group genes into co-expression patterns,
+but they are less able to explain functional interactions.
+An intrinsic difficulty in capturing such interactions in intact cells by
+traditional genetic experiments or pharmacological interventions
+is that any perturbation to a particular gene or signaling component may
+rapidly propagate throughout the network, causing global changes.
+The question thus arises of how to use the observed global changes to derive
+interactions between individual nodes.
+In this research we investigated
+some computational problems that arises in the
+context of experimental design for reverse engineering of protein and gene
+networks.
+Biological networks may have a very large number of species and parameters.
+For example, the <i>E. coli</i> transcription network
+has 577 interactions involving 116 transcription factors and
+419 operons. For such large-scale networks, exhaustive calculations are not practically
+possible due to combinatorial explosion and this necessitates the design of
+<b> provably efficient</b> approximation algorithms.
+
+<DT>
+<font color=blue>
+<b>
+Inferring Signal Trasduction Networks from Indirect Experimental Evidences
+</b>
+</font>
+<DD>
+
+We introduce a new method of combined synthesis and inference of biological signal 
+transduction networks. 
+A main idea of our method lies in representing observed causal relationships as network paths and using 
+techniques from combinatorial optimization to find the sparsest graph consistent with all experimental observations.
+We formalize our approach, study its computational complexity and prove new results 
+for exact and approximate solutions of the computationally hard transitive reduction 
+substep of the approach.  
+We validate the biological usability of our approach by successfully 
+applying it to a previously published signal transduction network and 
+by using it to synthesize and simplify a novel
+network corresponding to activation induced cell death in large granular lymphocyte leukemia.
+We also show that our algorithm for the transitive reduction substep performs well 
+on graphs with a structure similar to those observed in transcriptional 
+regulatory and signal transduction networks. 
+The NET-SYNTHESIS is freely downloadable from
+<a href="http://www.cs.uic.edu/~dasgupta/network-synthesis/">
+http://www.cs.uic.edu/~dasgupta/network-synthesis/
+</a>.
+
+<DT>
+<font color=blue>
+<b>
+Monotone Decomposition of Biological Networks
+</b>
+</font>
+<DD>
+
+A useful approach to the mathematical analysis of large-scale biological
+networks is based upon their decompositions into monotone dynamical systems.
+This research deals with computational problems associated to finding
+decompositions which are optimal in an appropriate sense.
+In graph-theoretic language, the problems can be recast in terms of
+maximal sign-consistent subgraphs.
+The theoretical results include polynomial-time approximation algorithms
+as well as constant-ratio inapproximability results.
+One of the algorithms, which has a worst-case guarantee of 87.9% from
+optimality, is based on the semidefinite programming
+relaxation approach of Goemans-Williamson.
+The algorithm was implemented and tested on a Drosophila
+segmentation network and an Epidermal Growth Factor Receptor pathway model,
+and it was found to perform close to optimally.
+</dl>
+
+<font color=red>
+<h2>
+Hybrid Systems (Computational Complexity Issues)
+</h2>
+</font>
+<p>
+The area of hybrid systems concerns issues of modeling, computation, and
+control for systems which combine discrete and continuous components.
+I am interested in designing and analyzing efficient algorithms for
+hybrid systems. Some specific recent interests are listed below.
+<dl>
+<dt>
+<font color=blue>
+<b>
+Piecewise Linear Systems
+</b>
+</font>
+<dd>
+A specific interest of mine inside hybrid systems is
+the class of (discrete-time) <b><i>piecewise linear</i></b>(PL)
+systems. 
+The subclass of PL systems provides one systematic approach
+to discrete-time hybrid systems, naturally blending switching mechanisms with
+classical linear components.
+PL systems are of interest as controllers as well as identification models,
+and they can be thought of as arbitrary interconnections of finite automata
+and linear systems.
+<dt>
+<font color=blue>
+<b>
+Honey-pot Constrained Searching with Local Sensory Information
+</b>
+</font>
+<dd>
+I have also investigated the problem of searching for a hidden
+target in a bounded region of the plane by an autonomous robot which
+is only able to use <b>local sensory</b> information. The problem is
+naturally formulated in the continuous domain but the solution
+proposed is based on an aggregation/refinement approach in which the
+continuous search space is partitioned into a finite collection of
+regions on which we define a discrete search problem. A solution to
+the original problem is obtained through a refinement procedure that
+lifts the discrete path into a continuous one.
+We show that the discrete optimization is computationally difficult
+(NP-hard) but there are computationally efficient approximation
+algorithms to solve it. The resulting solution to the continuous
+problem is in general not optimal but one can construct bounds to
+gauge the cost penalty incurred due to (i) the discretization of the
+problem and (ii) the attempt to approximately solve the NP-hard
+problem in polynomial time. Numerical simulations show that the 
+algorithms proposed behave significantly better than naive approaches such 
+as a random walk or a greedy algorithms.
+</dl>
+<font color=red>
+<h2>
+Approximation Algorithms
+</h2>
+</font>
+<p>
+In general, I am interested in applications of combinatorial/geometric techniques
+in designing and analyzing efficient algorithms for combinatorial, geometric or
+graph-theoretic problems with applications to VLSI/CAD, multiprocessor scheduling,
+combinatorial auctions, computational geometry, databases etc.
+</BODY>
+</HTML>
