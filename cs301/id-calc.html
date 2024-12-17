@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+		<html>
+
+<head>
+
+<SCRIPT language=JavaScript>
+
+var message = "function disabled";
+
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+
+document.onmousedown = rtclickcheck;
+
+</SCRIPT>
+
+</head>
+
+<body oncontextmenu="return false">
+    <p></p>
+
+    <span><input type="number" id="guess1"><p id="g1s"></p></span>
+    <input type="button" onclick="Calculate()" value="Calculate 5 digit new-ID from UIN">
+
+    <script>
+function Calculate() {
+    var GG = document.getElementById("guess1").value;
+    var HH = ( ( 13 * GG - 7 ) % 91275 ) - ( ( 9 * GG - 22 ) % 21277 ) ;
+    document.getElementById("g1s").innerHTML = HH;
+}
+    </script>
+
+    </body>
+
+    </html>
