@@ -1,0 +1,253 @@
+<html>
+<head>
+ <title>A Novel Method for Signal Transduction Network Inference from Indirect Experimental Evidence</title>
+<META NAME="keywords"
+ CONTENT="Combinatorial Optimization, Determining or using regulatory pathways in networks, Gene
+networks, Systems Biology">
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<font color=purple>
+<font COLOR="#009999">
+<font color=green>
+
+<h1>
+NET-SYNTHESIS: A software for synthesis, inference and simplification
+of signal transduction networks
+</h1>
+
+<A HREF="graph.gif">
+<IMG SRC="graph.gif" HEIGHT=120 WIDTH=170 ALIGN=right>
+</A>
+
+<p>
+Our software performs combined synthesis, inference and
+simplification of signal
+transduction networks. The main idea of the application lies in
+representing observed
+indirect causal relationships as network paths, introducing
+pseudo-vertices for unknown intermediaries of these paths and using
+techniques from combinatorial optimization to find the most
+parsimonious graph consistent with all experimental observations. The
+software contains algorithms for (i) transitive reduction of an
+initially synthesized graph subject to the constraints that no edges
+corresponding to direct interactions are eliminated and (ii)
+pseudo-vertex collapse subject to the constraints that real (known)
+vertices are not eliminated.
+
+<P>
+<h2>Some relevant publications</h2>
+
+<ul>
+<li>
+R&eacute;ka Albert, <b>Bhaskar DasGupta</b>, Anthony Gitter, Gamze G&#252;rsoy, Rashmi Hegde, Pradyut Pal, Gowri Sangeetha Sivanathan and Eduardo Sontag, <i><a href="http://www.cs.uic.edu/~dasgupta/resume/publ/papers/redundancy.pdf">A New Computationally Efficient Measure of Topological Redundancy of Biological and Social Networks</a></i>, <a href="http://pre.aps.org/abstract/PRE/v84/i3/e036117">Physical Review E, 84 (3), 036117</a>, 2011.
+
+<br>
+<br>
+It is well-known that biological and social interaction networks have a varying degree of redundancy,
+though a consensus of the precise cause of this is so far lacking. In this paper, we introduce a topological 
+redundancy measure for labeled directed networks that is formal,  
+computationally efficient and applicable to a variety of directed
+networks such as cellular signaling, metabolic and social interaction networks. We demonstrate the computational efficiency of our measure 
+by computing its value and statistical significance on a number of biological and social networks with up to 
+several thousands of nodes and edges.
+Our results suggest a number of interesting observations:
+<ul>
+<li>
+social networks are more redundant that their biological counterparts, 
+
+<li>
+transcriptional networks are less redundant than signaling networks, 
+
+<li>
+the topological redundancy of the <i>C. elegans</i> metabolic network is largely due to its
+inclusion of currency metabolites, and 
+
+<li>
+the redundancy of signaling networks is highly (negatively) correlated with the monotonicity 
+of their dynamics.
+</ul>
+
+<br>
+
+<li> 
+R&eacute;ka Albert, <b>Bhaskar DasGupta</b>, Riccardo Dondi and Eduardo Sontag,
+<i>
+<A HREF="http://www.cs.uic.edu/~dasgupta/resume/publ/papers/binary-transitive-9-revised-4.pdf">
+Inferring (Biological) Signal Transduction Networks via Transitive Reductions of
+Directed Graphs,
+</a>
+</i>
+<A HREF="http://www.springer.com/west/home?SGWID=4-102-70-1083191-detailsPage=journal|description&changeHeader=true&SHORTCUT=www.springer.com/journal/00453/about">
+Algorithmica,
+</a>
+51 (2), 129-159, 2008. 
+
+<br>
+<br>
+
+In this paper
+we consider the p-ary transitive reduction (TR<sub>p</sub>) problem where
+p>0 is an integer;
+for p=2 this problem
+arises in inferring a sparsest possible
+(biological) signal transduction network
+consistent with a set of experimental observations
+with a goal to minimize false positive
+inferences even if risking false negatives.
+In this paper, our contributions are as follows:
+
+<ul>
+<li>
+We observe that TR<sub>p</sub>, for any integer
+p>0, can be solved in linear time
+for directed acyclic graphs. 
+
+<li>
+We provide a 1.78-approximation
+for TR<sub>1</sub> that improves the 2-approximation
+known before.
+
+<li>
+We provide a 2+o(1)-approximation for TR<sub>p</sub> on general graphs
+for any fixed prime p>1.
+</ul>
+
+<br>
+<li>
+R&eacute;ka Albert, <b>Bhaskar DasGupta</b>, Riccardo Dondi, Sema Kachalo, Eduardo Sontag, Alexander
+Zelikovsky and Kelly Westbrook,
+<i>
+<A HREF="http://www.cs.uic.edu/~dasgupta/resume/publ/papers/binary-transitive-journal-3.pdf">
+A  Novel Method for
+Signal Transduction Network Inference from Indirect Experimental Evidence,
+</a>
+</i>
+<A HREF="http://www.liebertpub.com/publication.aspx?pub_id=31">
+Journal of Computational Biology
+</a>,
+14 (7), 927-949, 2007
+(extended abstract in
+<A HREF="http://www.wabi07.org/">
+7th Workshop on Algorithms in Bioinformatics (WABI),
+</a>
+R. Giancarlo and S. Hannenhalli (Eds.), LNBI 4645,
+Springer-Verlag, 407-419, 2007).
+
+<br>
+<br>
+
+We introduce a new method of combined synthesis and inference of biological signal 
+transduction networks. 
+A main idea of our method lies in representing observed causal relationships as network paths and using 
+techniques from combinatorial optimization to find the sparsest graph consistent with all experimental observations.
+Our contributions are twofold:
+
+<ul>
+<li> 
+we formalize our approach, study its computational complexity and prove <b>new</b> results 
+for exact and approximate solutions of the computationally hard transitive reduction 
+substep of the approach;  
+
+<li>
+we validate the biological 
+usability of our approach by successfully 
+applying it to a previously published signal transduction network by 
+Li et al.  and show that our algorithm 
+for the transitive reduction substep 
+performs well 
+on graphs with a structure similar to those observed in transcriptional 
+regulatory and signal transduction networks. 
+</ul>
+
+<br>
+
+<li>
+Sema Kachalo, Ranran Zhang, Eduardo Sontag, R&eacute;ka Albert and
+<b>Bhaskar DasGupta</b>,
+<i>
+<A HREF="http://www.cs.uic.edu/~dasgupta/resume/publ/papers/version-6.pdf">
+NET-SYNTHESIS: A software for synthesis, inference and simplification of signal transduction networks,
+</a>
+</i>
+Bioinformatics, 
+24 (2), 293-295, 2008
+
+<br>
+<br>
+We present a software for combined synthesis, inference and simplification of signal 
+transduction networks. The main idea of our method lies in representing observed 
+indirect causal relationships as network paths and using 
+techniques from combinatorial optimization to find the sparsest graph consistent 
+with all experimental observations.
+We illustrate the biological usability of our software by
+applying it to a previously published signal transduction network 
+and by using it to synthesize and simplify a novel
+network corresponding to activation induced cell death in large granular lymphocyte leukemia.
+</ul>
+
+<p>
+<h2>Software-related links</h2>
+</p><p>
+
+<ul>
+<li>
+<b><a href=drawgraph4.exe>drawgraph.exe</a></b> (MS windows version; save and run on your local computer)
+
+<ul>
+<li>
+For C++ source codes of a <b>non-graphic somewhat older version of this software with less functionality</b>, please email 
+Bhaskar DasGupta at bdasgup@uic.edu
+<br>
+<b>However, we recommend that you download and run drawgraph.exe in a MS window environment for the full version of the software.</b>
+</ul>
+
+<li>
+<A HREF="sample.txt">
+Format for input file for network synthesis
+</a>
+
+<li>
+<A HREF="sample-input-file.txt">
+A sample input file to play with the software
+</a>. 
+The first few lines of the file provides a suggested sequence of actions.
+
+<li> 
+<a href="help.html">
+Brief explanation of the software (short manual).
+</a> 
+
+<li>
+<a href="perf.pdf">
+Detailed performance of the transitive reduction algorithm on some 
+simulated biological networks.
+</a>
+
+<li>
+Synthesizing a real signal transduction network: 
+
+<ul>
+<li>
+<a href="old-2-2.pdf">
+The network manually synthesized by Li et al. redrawn for easier
+visual comparison.
+</a>
+
+<li>
+<a href="new-2-2.pdf">
+The network synthesized by our software.
+</a>
+A pseudo-node is displayed as  <font size=4>&#8859;</font> 
+</ul>
+</ul>
+
+<p>
+Copyright (C) 2006 Semen Kachalo.
+This program is free software; you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+</body>

@@ -1,0 +1,18 @@
+# This is an illustration of the format of the input file for the program.
+# any line that starts with a # is a comment and is ignored
+# any line in which there is a format error is ignored
+# -> indicates activation, -| indicates inhibition
+# direct interactions are encoded like below
+# the Y indicates that it is a critical edge
+# the E indicates that it is also an enzymatic edge
+A -> B 
+A -> B Y
+A -> B Y E
+A -| B 
+A -| B Y
+A -| B Y E
+# indirect causal relationships are encoded like below
+A -> (B -> C)
+A -> (B -| C)
+A -| (B -> C)
+A -| (B -| C)

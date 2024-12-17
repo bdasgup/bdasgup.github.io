@@ -1,0 +1,67 @@
+# This is a sample input file. 
+# Suggested sequence of actions: File/Read, Action/Enzymatic edges,
+# Action/Reduction (slower), Action/Add pseudonodes, Action/Collapse pseudonodes
+# Action/Reduction (slower), Action/Collapse degree-2 pseudonodes, 
+# Action/ Reduction (faster), Transform any of these nodes into pseudonodes
+# (right click on node, prepend * to node name, press Enter)
+#  InsPK, InsP6, NO, NOS, PLD, PA, GPA1, OST1, pHc, Action/Collapse degree-2 pseudonodes
+#
+ABA -> OST1
+ABA -> CaIM
+ABA -> InsP6
+ABA -> Ca2+c
+ABA  -> NO
+ABA -> InsP3
+ABA -> AnionEM
+ABA -> PLD 
+ABA -> ROS
+ABA -> GPA1
+Ca2+c -| CaIM
+Ca2+c -> AnionEM
+InsP6 -> Ca2+c
+InsP6 -> CIS
+ROS -> CaIM
+ROS -> Closure
+ROS -| KOUT
+pHc -> KOUT 
+pHc  -> ROS 
+PA -> Closure
+PA -> ROS
+NO -> Closure
+NO -> AnionEM
+NO -| KOUT 
+ABA -> pHc
+PA -> Atrboh
+ABA -> PLC
+NO -> CIS
+InsP3 -> CIS
+Ca2+c -> NOS
+GPA1  -> PLD			Y
+PLD -> PA			Y
+InsPK  ->  InsP6		Y	E
+PLC  ->  InsP3			Y	E
+NOS  ->  NO			Y	E
+Atrboh  ->  ROS			Y	E
+CIS -> Ca2+c			Y
+CaIM -> Ca2+c			Y
+AnionEM -> Closure		Y
+KOUT -> Closure			Y
+Atrboh -> (ABA -> ROS)
+Atrboh  -> (ABA -> Ca2+c)
+Atrboh -> (ABA -> CaIM)
+GPA1 -> (ABA -> ROS)
+GPA1  -> (ABA -> AnionEM)
+PLC -> (ABA -> Ca2+c)
+PLC -> (ABA -> KOUT)
+PLD -> (ABA -> Closure)  
+NO -> (ABA -> Closure)
+NO -> (ABA -> AnionEM)
+NO -> (Ca2+c -> CIS)
+Ca2+c -> (NO -> AnionEM)
+Ca2+c -> (PLC -> InsP3)
+CaIM -> (ABA -> KOUT)
+InsPK -> (ABA -> AnionEM)
+InsPK -> (ABA -> InsP6)
+OST1 -> (ABA -> ROS)
+KOUT  -> (ABA -> Closure)
+ROS -> (ABA -> CaIM)
