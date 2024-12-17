@@ -1,0 +1,175 @@
+### Fri Feb 18 01:26:45 PM
+hh_2	->	HH_mem_2
+HH_mem_2	->	PH_mem_1
+HH_mem_6	->	PH_mem_1
+hh_6	->	HH_mem_6
+ptc_1	->	PTC_mem_1
+wg_1	->	WG_1
+WG_1	->	WG_mem_1
+CN_1	-|	ptc_1
+ci_1	->	CI_1
+PTC_mem_1	->	CN_1
+CI_1	->	CN_1
+EN_1	->	hh_1
+hh_1	->	HH_mem_1
+CN_1	-|	wg_1
+EN_1	-|	ci_1
+WG_2	->	WG_mem_2
+WG_mem_6	->	en_1
+WG_6	->	WG_mem_6
+en_1	->	EN_1
+HH_mem_1	->	PH_mem_2
+HH_mem_3	->	PH_mem_2
+hh_3	->	HH_mem_3
+ptc_2	->	PTC_mem_2
+wg_2	->	WG_2
+CN_2	-|	ptc_2
+ci_2	->	CI_2
+PTC_mem_2	->	CN_2
+CI_2	->	CN_2
+EN_2	->	hh_2
+CN_2	-|	wg_2
+WG_mem_3	->	en_2
+WG_3	->	WG_mem_3
+en_2	->	EN_2
+EN_2	-|	ci_2
+HH_mem_2	->	PH_mem_3
+HH_mem_4	->	PH_mem_3
+hh_4	->	HH_mem_4
+ptc_3	->	PTC_mem_3
+wg_3	->	WG_3
+CN_3	-|	ptc_3
+ci_3	->	CI_3
+PTC_mem_3	->	CN_3
+CI_3	->	CN_3
+EN_3	->	hh_3
+CN_3	-|	wg_3
+WG_mem_2	->	en_3
+WG_mem_4	->	en_3
+WG_4	->	WG_mem_4
+en_3	->	EN_3
+EN_3	-|	ci_3
+hh_5	->	HH_mem_5
+HH_mem_3	->	PH_mem_4
+HH_mem_5	->	PH_mem_4
+ptc_4	->	PTC_mem_4
+wg_4	->	WG_4
+CN_4	-|	ptc_4
+ci_4	->	CI_4
+PTC_mem_4	->	CN_4
+CI_4	->	CN_4
+EN_4	->	hh_4
+CN_4	-|	wg_4
+WG_5	->	WG_mem_5
+WG_mem_3	->	en_4
+WG_mem_5	->	en_4
+en_4	->	EN_4
+EN_4	-|	ci_4
+HH_mem_6	->	PH_mem_5
+HH_mem_4	->	PH_mem_5
+ptc_5	->	PTC_mem_5
+wg_5	->	WG_5
+CN_5	-|	ptc_5
+ci_5	->	CI_5
+PTC_mem_5	->	CN_5
+CI_5	->	CN_5
+EN_5	->	hh_5
+CN_5	-|	wg_5
+WG_mem_6	->	en_5
+WG_mem_4	->	en_5
+en_5	->	EN_5
+EN_5	-|	ci_5
+HH_mem_1	->	PH_mem_6
+HH_mem_5	->	PH_mem_6
+ptc_6	->	PTC_mem_6
+wg_6	->	WG_6
+CN_6	-|	ptc_6
+ci_6	->	CI_6
+PTC_mem_6	->	CN_6
+CI_6	->	CN_6
+EN_6	->	hh_6
+CN_6	-|	wg_6
+WG_mem_1	->	en_6
+WG_mem_5	->	en_6
+en_6	->	EN_6
+EN_6	-|	ci_6
+
+
+#// CI_1	1595	67
+#// CN_1	730	1060
+#// wg_1	1219	1023
+#// WG_1	539	489
+#// WG_mem_1	1652	157
+#// en_6	196	1045
+#// EN_6	957	1295
+#// ci_6	577	889
+#// CI_6	1116	421
+#// CN_6	1570	287
+#// wg_6	1132	1390
+#// WG_6	1021	912
+#// WG_mem_6	1974	116
+#// en_5	1836	877
+#// EN_5	1631	960
+#// ci_5	103	1133
+#// CI_5	1135	623
+#// CN_5	968	372
+#// wg_5	705	485
+#// WG_5	490	434
+#// WG_mem_5	1335	138
+#// en_4	1886	1445
+#// EN_4	802	159
+#// ci_4	651	458
+#// CI_4	419	706
+#// CN_4	1160	731
+#// wg_4	1335	406
+#// WG_4	865	364
+#// WG_mem_4	97	62
+#// en_3	1583	535
+#// EN_3	682	1441
+#// ci_3	1344	248
+#// CI_3	1117	1149
+#// CN_3	1243	638
+#// wg_3	1429	123
+#// WG_3	1624	1415
+#// WG_mem_3	1406	877
+#// en_2	1790	92
+#// EN_2	932	681
+#// ci_2	795	1221
+#// CI_2	1022	1144
+#// CN_2	1919	920
+#// wg_2	137	913
+#// WG_2	116	707
+#// WG_mem_2	1910	1235
+#// ptc_2	332	278
+#// PTC_mem_2	1713	1061
+#// hh_2	1623	358
+#// HH_mem_2	177	1028
+#// ptc_3	1202	756
+#// PTC_mem_3	1575	853
+#// hh_3	492	829
+#// HH_mem_3	326	183
+#// ptc_4	613	1108
+#// PTC_mem_4	616	656
+#// hh_4	1657	597
+#// HH_mem_4	1329	777
+#// PH_mem_3	1929	1442
+#// ptc_5	667	1439
+#// PTC_mem_5	1737	1339
+#// hh_5	1068	96
+#// HH_mem_5	1963	772
+#// PH_mem_4	1531	817
+#// en_1	1564	1126
+#// EN_1	1043	1223
+#// ci_1	1346	674
+#// hh_1	1026	730
+#// HH_mem_1	1099	1031
+#// PH_mem_6	348	903
+#// PH_mem_2	807	1050
+#// ptc_6	1061	392
+#// PTC_mem_6	1655	841
+#// hh_6	909	716
+#// HH_mem_6	1368	1395
+#// PH_mem_5	1512	1119
+#// PH_mem_1	691	1130
+#// ptc_1	1231	1262
+#// PTC_mem_1	1514	54

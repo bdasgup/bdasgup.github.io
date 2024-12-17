@@ -1,0 +1,737 @@
+### Fri Jun 04 11:24:49 AM
+acrAB	-|	acrR
+ada_alkB	-|	ada_alkB
+ada_alkB	->	ada_alkB
+aidB	->	ada_alkB
+alkA	->	ada_alkB
+araBAD	-|	araC
+araBAD	->	araC
+araC	-|	araC
+araE	-|	araC
+araE	->	araC
+araFG_araH_1H_2	-|	araC
+araFG_araH_1H_2	->	araC
+araJ	->	araC
+argCBH	-|	argR
+argR	-|	argR
+argD	-|	argR
+argE	-|	argR
+argF	-|	argR
+argI	-|	argR
+carAB	-|	argR
+adiA	->	adiA_adiY
+slp	->	alpA
+appCBA	->	appY
+lctPRD	-|	arcA
+mdh	-|	arcA
+nuoABCEFGHIJKLMN	-|	arcA
+sodA	-|	arcA
+appY	->	arcA
+cyoABCDE	-|	arcA
+dctA	-|	arcA
+fadBA	-|	arcA
+focA_pflB	->	arcA
+fumA	-|	arcA
+fumC	-|	arcA
+glcDEFGB	-|	arcA
+glpACB	-|	arcA
+gltA	-|	arcA
+icdA	-|	arcA
+aceBAK	-|	arcA
+betIBA	-|	arcA
+cydAB	->	arcA
+betIBA	-|	betIBA
+betT	-|	betIBA
+arsEFG	-|	arsR
+asnA	->	asnC
+asnC	-|	asnC
+atoDAB	->	atoC
+atoDAE	->	atoC
+bioA	-|	birA_murA
+bioBFCD	-|	birA_murA
+cadBA	->	cadC
+caiTABCDE	->	caiF
+fixABCX	->	caiF
+ssuEADCB	->	cbl
+tauABCD	->	cbl
+cpxAR	->	cpxAR
+cpxP	->	cpxAR
+dsbA	->	cpxAR
+ecfI	->	cpxAR
+htrA	->	cpxAR
+motABcheAW	-|	cpxAR
+rotA	->	cpxAR
+skp_lpxDA_fabZ	->	cpxAR
+tsr	-|	cpxAR
+xprB_dsbC_recJ	->	cpxAR
+araC	->	crp
+dctA	-|	crp
+focA_pflB	->	crp
+glpACB	->	crp
+gltA	->	crp
+caiF	->	crp
+acs	->	crp
+crp	-|	crp
+crp	->	crp
+aldB	->	crp
+ansB	->	crp
+cirA	->	crp
+cpdB	->	crp
+cyaA	-|	crp
+dadAX	->	crp
+dcuB_fumB	-|	crp
+deoCABD	-|	crp
+deoCABD	->	crp
+dsdXA	->	crp
+ebgAC	->	crp
+epd_pgk	->	crp
+fadL	-|	crp
+flhDC	->	crp
+fucPIKUR	->	crp
+fur	->	crp
+galETKM	-|	crp
+galETKM	->	crp
+galS	->	crp
+glgCAP	->	crp
+glgS	->	crp
+glnALG	->	crp
+glpD	->	crp
+glpFK	->	crp
+glpTQ	->	crp
+gntKU	->	crp
+gntT	->	crp
+ivbL_ilvBN	->	crp
+lacZYA	->	crp
+malI	-|	crp
+malT	->	crp
+malXY	-|	crp
+manXYZ	->	crp
+melR	->	crp
+mglBAC	->	crp
+nagBACD	->	crp
+nagE	->	crp
+nupG	-|	crp
+nupG	->	crp
+ompA	-|	crp
+ppiA	-|	crp
+ppiA	->	crp
+proP	-|	crp
+proP	->	crp
+ptsHI_crr	-|	crp
+ptsHI_crr	->	crp
+rhaBAD	-|	crp
+rhaBAD	->	crp
+rhaT	->	crp
+rpoH	-|	crp
+rpoH	->	crp
+sdhCDAB_b0725_sucABCD	->	crp
+speC	-|	crp
+srlAEBD_gutM_srlR_gutQ	->	crp
+tdcABCDEFG	->	crp
+tnaLAB	->	crp
+tsx	-|	crp
+tsx	->	crp
+ubiG	->	crp
+udp	->	crp
+uhpT	->	crp
+yhfA	-|	crp
+yhfA	->	crp
+yiaKLMNOPQRS	->	crp
+flgAMN	->	flhDC
+fliAZY	->	flhDC
+fucAO	->	fucPIKUR
+fucPIKUR	->	fucPIKUR
+sodA	-|	fur
+cirA	-|	fur
+fur	-|	fur
+tonB	-|	fur
+fecIR	-|	fur
+entCEBA	-|	fur
+fepA_entD	-|	fur
+fepB	-|	fur
+fepDGC	-|	fur
+fhuACDB	-|	fur
+galS	-|	galS
+mglBAC	-|	galS
+glnALG	-|	glnALG
+glnALG	->	glnALG
+glnHPQ	-|	glnALG
+glnHPQ	->	glnALG
+nac	->	glnALG
+malI	-|	malI
+malXY	-|	malI
+malEFG	->	malT
+malK_lamB_malM	->	malT
+malS	->	malT
+malPQ	->	malT
+malZ	->	malT
+melAB	->	melR
+melR	-|	melR
+manXYZ	-|	nagBACD
+nagBACD	-|	nagBACD
+nagE	-|	nagBACD
+glmUS	-|	nagBACD
+glmUS	->	nagBACD
+galETKM	-|	GalR
+galS	-|	GalR
+gatYZABCDR_2	-|	gatR_1
+csgBA	->	csgDEFG
+csgDEFG	->	csgDEFG
+gyrA	->	cspA
+hns	->	cspA
+caiF	-|	hns
+flhDC	->	hns
+hns	-|	hns
+nhaA	->	hns
+osmC	->	hns
+rcsAB	->	hns
+stpA	-|	hns
+cynR	-|	cynR
+cynTSX	->	cynR
+tauABCD	->	cysB
+cysB	-|	cysB
+cysDNC	->	cysB
+cysJIH	->	cysB
+cysK	->	cysB
+cysPUWAM	->	cysB
+deoCABD	-|	cytR
+nupG	-|	cytR
+ppiA	-|	cytR
+rpoH	-|	cytR
+tsx	-|	cytR
+tsx	->	cytR
+udp	-|	cytR
+nupC	-|	cytR
+deoCABD	-|	deoR
+nupG	-|	deoR
+tsx	-|	deoR
+rpoH	-|	dnaA
+nrdAB	->	dnaA
+dsdXA	->	dsdC
+dsdC	-|	dsdC
+ebgAC	-|	ebgR
+emrRAB	-|	emrRAB
+ompC	->	envY_ompT
+ompF	->	envY_ompT
+ompC	->	evgA
+exuR	-|	exuR
+exuT	-|	exuR
+uxaCA	-|	exuR
+uxuABR	-|	exuR
+fadBA	-|	fadR
+fadL	-|	fadR
+fabA	->	fadR
+iclMR	-|	fadR
+uspA	-|	fadR
+aceBAK	-|	iclMR
+acs	-|	iclMR
+fecABCDE	->	fecIR
+fecIR	->	fecIR
+fdhF	->	fhlA
+hycABCDEFGH	->	fhlA
+hypABCDE	->	fhlA
+motABcheAW	->	fliAZY
+tsr	->	fliAZY
+flgBCDEFGHIJK	->	fliAZY
+flhBAE	->	fliAZY
+fliAZY	->	fliAZY
+fliE	->	fliAZY
+fliFGHIJK	->	fliAZY
+fliLMNOPQR	->	fliAZY
+flgKL	->	fliAZY
+flgMN	->	fliAZY
+fliC	->	fliAZY
+fliDST	->	fliAZY
+tarTapcheRBYZ	->	fliAZY
+glpACB	->	fnr
+arcA	->	fnr
+cydAB	-|	fnr
+caiF	->	fnr
+acs	->	fnr
+ansB	->	fnr
+dcuB_fumB	->	fnr
+sdhCDAB_b0725_sucABCD	-|	fnr
+tdcABCDEFG	->	fnr
+hypABCDE	->	fnr
+fnr	-|	fnr
+aspA	->	fnr
+dmsABC	->	fnr
+fdnGHI	->	fnr
+frdABCD	->	fnr
+narGHJI	->	fnr
+narK	->	fnr
+ndh	-|	fnr
+nirBDC_cysG	->	fnr
+icdA	->	FruR
+aceBAK	-|	FruR
+ptsHI_crr	-|	FruR
+ptsHI_crr	->	FruR
+adhE	-|	FruR
+fruBKA	-|	FruR
+ppsA	->	FruR
+pykF	-|	FruR
+gcvA	-|	gcvA
+gcvTHP	-|	gcvA
+gcvTHP	->	gcvA
+gcvTHP	-|	gcvR
+glcDEFGB	->	glcC
+nac	-|	nac
+gdhA	-|	nac
+putAP	->	nac
+glpACB	-|	glpR
+glpD	-|	glpR
+glpFK	-|	glpR
+glpTQ	-|	glpR
+gntKU	-|	gntR
+gntT	-|	gntR
+edd_eda	-|	gntR
+hcaA1A2CBD_yphA	->	hcaR
+hcaR	-|	hcaR
+nuoABCEFGHIJKLMN	-|	himA
+sodA	-|	himA
+carAB	-|	himA
+carAB	->	himA
+focA_pflB	->	himA
+glcDEFGB	->	himA
+aceBAK	->	himA
+caiTABCDE	-|	himA
+tdcABCDEFG	->	himA
+hycABCDEFGH	->	himA
+hypABCDE	->	himA
+narGHJI	->	himA
+narK	->	himA
+glnHPQ	-|	himA
+glnHPQ	->	himA
+himA	-|	himA
+dps	->	himA
+ecpD_htrE	->	himA
+himD	-|	himA
+ompR_envZ	-|	himA
+osmE	-|	himA
+pspABCDE	->	himA
+fadL	-|	ompR_envZ
+flhDC	-|	ompR_envZ
+csgDEFG	->	ompR_envZ
+ompC	->	ompR_envZ
+ompF	-|	ompR_envZ
+ompF	->	ompR_envZ
+hipBA	->	hipBA
+hycABCDEFGH	-|	hycA
+zraP	->	hydHG
+idnDOTR	->	idnDOTR
+ilvC	->	ilvY
+ilvY	-|	ilvY
+kdpABC	->	kdpDE
+lacZYA	-|	lacI
+leuLABCD	->	leuO
+lexA_dinF	-|	lexA_dinF
+polB	-|	lexA_dinF
+recA	-|	lexA_dinF
+recN	-|	lexA_dinF
+rpsU_dnaG_rpoD	-|	lexA_dinF
+ssb	-|	lexA_dinF
+sulA	-|	lexA_dinF
+umuDC	-|	lexA_dinF
+uvrA	-|	lexA_dinF
+uvrB	-|	lexA_dinF
+uvrC	-|	lexA_dinF
+uvrD	-|	lexA_dinF
+ompC	-|	lrp
+ompF	->	lrp
+gcvTHP	->	lrp
+osmC	->	lrp
+stpA	->	lrp
+lrp	-|	lrp
+gltBDF	->	lrp
+ilvIH	->	lrp
+kbl_tdh	-|	lrp
+kbl_tdh	->	lrp
+livJ	-|	lrp
+livKHMGF	-|	lrp
+lysU	-|	lrp
+oppABCDF	-|	lrp
+sdaA	-|	lrp
+serA	->	lrp
+tdcABCDEFG	->	lysR
+lysA	->	lysR
+lysR	-|	lysR
+sodA	->	marRAB
+fumC	->	marRAB
+fpr	->	marRAB
+marRAB	-|	marRAB
+nfo	->	marRAB
+zwf	->	marRAB
+metJ	-|	metJ
+metC	-|	metJ
+metF	-|	metJ
+metR	-|	metJ
+metA	->	metR
+metR	-|	metR
+glyA	->	metR
+metH	->	metR
+mhpABCDFE	->	mhpR
+malT	-|	mlc
+manXYZ	-|	mlc
+ptsHI_crr	-|	mlc
+ptsG	-|	mlc
+moaABCDE	->	moaABCDE
+modABC	-|	modE
+mtlADR	-|	mtlADR
+nadB	-|	nadR
+pncB	-|	nadR
+nuoABCEFGHIJKLMN	->	narL
+focA_pflB	-|	narL
+caiF	-|	narL
+dcuB_fumB	-|	narL
+dmsABC	-|	narL
+fdnGHI	->	narL
+frdABCD	-|	narL
+narGHJI	->	narL
+narK	->	narL
+nirBDC_cysG	->	narL
+adhE	-|	narL
+nrfABCDEFG	->	narL
+torCAD	-|	narL
+nhaA	->	nhaR
+alkA	->	nlpD_rpoS
+appY	->	nlpD_rpoS
+cpxAR	->	nlpD_rpoS
+acs	->	nlpD_rpoS
+aldB	->	nlpD_rpoS
+proP	->	nlpD_rpoS
+adhE	->	nlpD_rpoS
+dps	->	nlpD_rpoS
+nhaA	->	nlpD_rpoS
+osmC	->	nlpD_rpoS
+ftsQAZ	->	nlpD_rpoS
+katG	->	nlpD_rpoS
+narZYWV	->	nlpD_rpoS
+osmY	->	nlpD_rpoS
+dps	->	oxyR
+katG	->	oxyR
+ahpCF	->	oxyR
+oxyR	-|	oxyR
+gorA	->	oxyR
+pdhR_aceEF_lpdA	-|	pdhR_aceEF_lpdA
+phnCDE_f73_phnFGHIJKLMNOP	->	phoBR
+phoBR	->	phoBR
+phoA	->	phoBR
+phoE	->	phoBR
+pstSCAB_phoU	->	phoBR
+pspABCDE	->	pspF
+gcvTHP	-|	purR
+codBA	-|	purR
+cvpA_purF_ubiX	-|	purR
+
+
+#// zwf	1530	179
+#// zraP	164	1140
+#// yiaKLMNOPQRS	572	1385
+#// yhfA	520	719
+#// xprB_dsbC_recJ	1528	1326
+#// uxuABR	318	1020
+#// uxaCA	1247	967
+#// uvrD	1082	1429
+#// uvrC	1976	796
+#// uvrB	500	693
+#// uvrA	1918	1251
+#// uspA	252	699
+#// umuDC	1330	1067
+#// uhpT	1371	1416
+#// udp	1451	995
+#// ubiG	1633	1374
+#// tsx	1951	721
+#// tsr	1810	378
+#// torCAD	1030	1104
+#// tonB	1741	235
+#// tnaLAB	934	709
+#// tdcABCDEFG	589	356
+#// tauABCD	1057	1322
+#// tarTapcheRBYZ	287	464
+#// sulA	1971	1262
+#// stpA	1540	1029
+#// ssuEADCB	700	179
+#// ssb	1609	306
+#// srlAEBD_gutM_srlR_gutQ	992	641
+#// speC	342	1076
+#// sodA	760	969
+#// slp	289	1127
+#// skp_lpxDA_fabZ	386	1381
+#// serA	1408	265
+#// sdhCDAB_b0725_sucABCD	1806	1391
+#// sdaA	766	291
+#// rpsU_dnaG_rpoD	943	696
+#// rpoH	1366	203
+#// rotA	1847	1323
+#// rhaT	1329	493
+#// rhaBAD	1028	714
+#// recN	961	1145
+#// recA	771	1183
+#// rcsAB	647	417
+#// pykF	659	110
+#// putAP	299	1179
+#// ptsHI_crr	1576	493
+#// ptsG	1231	694
+#// pstSCAB_phoU	1528	352
+#// pspABCDE	878	919
+#// pspF	1158	982
+#// proP	297	1142
+#// ppsA	987	216
+#// ppiA	1815	978
+#// polB	1091	771
+#// pncB	1452	838
+#// phoE	1880	1313
+#// phoA	889	1424
+#// phnCDE_f73_phnFGHIJKLMNOP	1908	362
+#// phoBR	1729	719
+#// pdhR_aceEF_lpdA	1028	549
+#// osmY	1634	377
+#// osmE	923	964
+#// osmC	126	1328
+#// oppABCDF	66	790
+#// ompF	1481	71
+#// ompC	854	92
+#// ompA	1882	543
+#// nupG	676	483
+#// nupC	1530	619
+#// nuoABCEFGHIJKLMN	995	447
+#// nrfABCDEFG	101	1396
+#// nrdAB	386	1110
+#// nirBDC_cysG	1728	889
+#// nhaA	694	1307
+#// nhaR	920	850
+#// nfo	1573	959
+#// ndh	362	1160
+#// narZYWV	254	613
+#// narK	910	371
+#// narGHJI	1740	702
+#// nagE	1779	1090
+#// nadB	165	1128
+#// nadR	1366	274
+#// mtlADR	1238	251
+#// motABcheAW	923	1240
+#// modABC	1561	689
+#// modE	1015	1104
+#// moaABCDE	1236	66
+#// mhpABCDFE	415	1332
+#// mhpR	823	921
+#// mglBAC	1409	303
+#// metH	100	1443
+#// metF	1107	1119
+#// metC	741	153
+#// metA	540	951
+#// melAB	113	912
+#// melR	358	1040
+#// mdh	981	874
+#// manXYZ	1490	1338
+#// malZ	262	1198
+#// malXY	1333	1052
+#// malS	1835	444
+#// malPQ	996	177
+#// malK_lamB_malM	816	700
+#// malI	654	1079
+#// malEFG	210	938
+#// malT	1359	1155
+#// mlc	1110	943
+#// lysU	1793	195
+#// lysA	708	81
+#// lysR	1292	138
+#// livKHMGF	1757	317
+#// livJ	1247	1275
+#// lexA_dinF	1303	500
+#// leuLABCD	841	737
+#// leuO	441	1142
+#// lctPRD	1788	382
+#// lacZYA	1188	1349
+#// lacI	1008	1291
+#// kdpABC	1019	633
+#// kdpDE	1716	1270
+#// kbl_tdh	782	1125
+#// katG	263	295
+#// ivbL_ilvBN	1814	873
+#// ilvIH	478	129
+#// ilvC	965	1349
+#// ilvY	641	244
+#// idnDOTR	1539	1177
+#// icdA	1889	267
+#// hypABCDE	1031	659
+#// hydHG	609	1336
+#// hycABCDEFGH	1907	397
+#// hycA	791	1032
+#// htrA	797	771
+#// hipBA	975	81
+#// himD	424	193
+#// hcaA1A2CBD_yphA	1919	582
+#// hcaR	1837	721
+#// gyrA	960	1037
+#// gorA	305	174
+#// gntT	852	797
+#// gntKU	60	1380
+#// glyA	666	1002
+#// metR	715	1130
+#// metJ	1820	991
+#// gltBDF	1252	246
+#// gltA	883	994
+#// glpTQ	1908	1171
+#// glpFK	436	116
+#// glpD	51	261
+#// glpACB	821	1060
+#// glpR	1075	1322
+#// glnHPQ	1204	1052
+#// glmUS	421	266
+#// nagBACD	1419	100
+#// glgS	663	597
+#// glgCAP	399	906
+#// glcDEFGB	1446	872
+#// glcC	1432	1055
+#// gdhA	647	1319
+#// nac	920	468
+#// glnALG	875	866
+#// gcvTHP	1569	428
+#// lrp	1124	1433
+#// gcvR	1079	769
+#// gcvA	1653	499
+#// gatYZABCDR_2	1748	1375
+#// gatR_1	658	338
+#// galS	1895	956
+#// galETKM	1361	1387
+#// fumC	578	667
+#// fumA	228	357
+#// fucAO	1331	538
+#// fucPIKUR	895	207
+#// ftsQAZ	1316	931
+#// fruBKA	1527	1019
+#// frdABCD	1692	460
+#// fpr	133	669
+#// marRAB	523	745
+#// focA_pflB	833	1111
+#// fliLMNOPQR	1168	441
+#// fliFGHIJK	713	459
+#// fliE	870	793
+#// fliDST	1794	527
+#// fliC	144	140
+#// flhBAE	1344	401
+#// flgMN	214	581
+#// flgKL	90	396
+#// flgBCDEFGHIJK	96	680
+#// fliAZY	341	990
+#// flgAMN	1547	781
+#// flhDC	768	513
+#// fixABCX	1736	1280
+#// fhuACDB	118	1190
+#// fepDGC	73	95
+#// fepB	1926	781
+#// fepA_entD	461	648
+#// fecABCDE	744	703
+#// fecIR	132	577
+#// fdnGHI	1089	1169
+#// fdhF	696	1037
+#// fhlA	242	140
+#// fadL	364	1263
+#// fadBA	756	564
+#// fabA	1203	1146
+#// exuT	274	265
+#// exuR	217	159
+#// evgA	1372	227
+#// epd_pgk	1576	745
+#// envY_ompT	481	1324
+#// entCEBA	1047	1395
+#// emrRAB	567	741
+#// edd_eda	95	1406
+#// gntR	1077	849
+#// ecpD_htrE	1470	929
+#// ecfI	1475	177
+#// ebgAC	537	651
+#// ebgR	884	1384
+#// dsdXA	1732	966
+#// dsdC	1342	598
+#// dsbA	1056	564
+#// dps	584	1309
+#// dnaA	423	917
+#// dmsABC	511	1009
+#// deoCABD	869	342
+#// deoR	168	845
+#// dcuB_fumB	1007	582
+#// dctA	794	68
+#// dadAX	1209	1347
+#// cytR	1907	268
+#// cysPUWAM	892	801
+#// cysK	1327	904
+#// cysJIH	1978	331
+#// cysDNC	1741	1143
+#// cysB	1420	150
+#// cyoABCDE	924	719
+#// cynTSX	1165	821
+#// cynR	1029	540
+#// cydAB	1835	750
+#// cyaA	1855	1178
+#// cvpA_purF_ubiX	1355	646
+#// csgBA	1049	603
+#// csgDEFG	178	817
+#// ompR_envZ	1857	1206
+#// cpxP	1728	1282
+#// cpxAR	1114	265
+#// cpdB	1774	258
+#// codBA	746	1321
+#// purR	296	1362
+#// cirA	1658	497
+#// fur	826	374
+#// cbl	1898	347
+#// carAB	1907	762
+#// caiTABCDE	1151	575
+#// caiF	1013	1072
+#// hns	1027	1095
+#// cspA	1531	1031
+#// cadBA	92	938
+#// cadC	842	923
+#// bioBFCD	514	1097
+#// bioA	1001	415
+#// birA_murA	286	606
+#// betT	1726	983
+#// betIBA	730	1053
+#// atoDAE	512	1234
+#// atoDAB	1651	1305
+#// atoC	787	839
+#// aspA	1212	761
+#// asnA	733	919
+#// asnC	866	106
+#// arsEFG	755	1130
+#// arsR	1529	54
+#// argI	271	612
+#// argF	946	1019
+#// argE	1810	701
+#// argD	1942	271
+#// argCBH	1437	1111
+#// argR	190	713
+#// araJ	1192	530
+#// araFG_araH_1H_2	427	881
+#// araE	962	289
+#// araBAD	1245	1061
+#// araC	347	104
+#// appCBA	184	641
+#// appY	1122	834
+#// ansB	1203	347
+#// alpA	1577	1391
+#// alkA	1400	374
+#// aldB	1805	378
+#// aidB	932	106
+#// ahpCF	925	172
+#// oxyR	542	357
+#// adiA	278	689
+#// adiA_adiY	1468	287
+#// adhE	199	1360
+#// narL	1910	433
+#// ada_alkB	903	1140
+#// acs	1128	1026
+#// nlpD_rpoS	330	454
+#// crp	1896	1221
+#// acrAB	946	205
+#// acrR	179	569
+#// aceBAK	654	260
+#// himA	1300	483
+#// iclMR	464	1394
+#// fadR	178	52
+#// arcA	1247	481
+#// fnr	438	801
+#// GalR	1666	256
+#// FruR	1324	505
