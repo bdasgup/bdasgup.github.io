@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>FIN-STAB: Interactive Shock Simulator for Financial Networks</title>
+<META NAME="keywords"
+ CONTENT="Financial networks, OTC markets, stability, loss of assets">
+<style type="text/css"> p.space {line-height:150%;} </style> 
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<font color=blue>
+<font size=+1>
+<font face="sans-serif">
+
+<h1>
+<center>
+<font color=gray>
+FIN-STAB: An interactive software for shock simulator for financial networks
+</font>
+</center>
+</h1>
+
+<A HREF="financial-simulator-image1.jpg">
+<IMG SRC="financial-simulator-image1.jpg" HEIGHT=450 WIDTH=550 ALIGN=right>
+</A>
+
+<p class="space">
+
+<hr size=5 color=red noshade>
+
+<p class="space">
+Our software takes as input a specific model of financial networks with <i>interlocked</i> balanced sheets and shows the effect of loss of external assets of a subset of nodes (shock) on the remaining nodes of the network. The user can either input his/her own file for the network with parameters, or can study the effect on random networks generated based on a pre-defined set of models. This software can be used to study relationship of the stability properties of these types of financial networks with the topology and other parameters of the network.
+
+
+<p class="space">
+
+<font color=red>
+<b>
+Please report any bugs or suggestions for improvements to Lakshmi Kaligounder by email to <a href="mailto:lkalig2@uic.edu">lkalig2@uic.edu</a>
+</b>
+</font>
+
+<hr size=5 color=red noshade>
+
+<h2>Some relevant publications</h2>
+
+<ul>
+	<li> Piotr Berman, Bhaskar DasGupta, Lakshmi Kaligounder and Marek Karpinski, <a href="http://www.cs.uic.edu/~dasgupta/resume/publ/papers/banking-outbound.pdf">On the Computational Complexity of Measuring Global Stability of Banking Networks</a>, Algorithmica, 70(4), 595-647, 2014.
+	<p>
+	Here are some <a href="../../talks/slides-outbound.pptx">power-point slides</a> for these results.
+<p class="space">
+	<font color=green>
+		Threats on the stability of a financial system may severely affect the functioning of the entire economy, and thus considerable emphasis is placed on the analyzing the cause and effect of such threats. The financial crisis in the current and past decade has shown that one important cause of instability in global markets is the so-called <i>financial contagion</i>, namely the spreadings of instabilities or failures of <i>individual</i> components of the network to other, perhaps healthier, components. This leads to a natural question of whether the regulatory authorities could have predicted and perhaps mitigated the current economic crisis by effective computations of some stability measure of the banking networks. Motivated by such observations, we consider the problem of defining and evaluating stabilities of both homogeneous and heterogeneous banking networks against propagation of <i>synchronous idiosyncratic shocks</i> given to a subset of banks. We formalize the homogeneous banking network model of Nier <i>et al.</i> (E. Nier, J. Yang, T. Yorulmazer and A. Alentorn, Network models and financial stability, Journal of Economics Dynamics and Control, 31, 2033-2060, 2007) and its corresponding heterogeneous version, formalize the synchronous shock propagation procedures, define two appropriate stability measures and investigate the computational complexities of evaluating these measures for various network topologies and parameters of interest. Our results and proofs also shed some light on the properties of topologies and parameters of the network that may lead to higher or lower stabilities.  
+	</font>
+
+
+	<li><b>Bhaskar DasGupta</b> and Lakshmi Kaligounder, <i><a href="http://www.cs.uic.edu/~dasgupta/resume/publ/papers/jcn-accept.pdf">On Global Stability of Financial Networks</a></i>,  <a href="http://dx.doi.org/10.1093/comnet/cnu004">Journal of Complex Networks</a>, 2(3), 313-354, 2014. 
+
+<p class="space">
+	<font color=green> 
+		The recent financial crisis have generated renewed interests in fragilities of global financial networks among economists and regulatory authorities. In particular, a potential vulnerability of the financial networks is the "financial contagion" process in which insolvencies of individual entities propagate through the "web of dependencies" to affect the entire system. In this paper, we formalize an extension of a financial network model originally proposed by Nier <i>et al.</i> (E. Nier, J. Yang, T. Yorulmazer and A. Alentorn, Network models and financial stability, Journal of Economics Dynamics and Control, 31, 2033-2060, 2007) for scenarios such as the OTC derivatives market, define a suitable global stability measure for this model, and perform a <i>comprehensive empirical evaluation</i> of this stability measure over more than 700,000 combinations of networks types and parameter combinations. Based on our evaluations, we discover many interesting implications of our evaluations of this stability measure, and derive topological properties and parameters combinations that may be used to flag the network as a <i>possible</i> fragile network.
+	</font>
+</ul>
+
+<p class="space">
+Talks "based" on the above two results were given at:
+<ul>
+	        <li><a href="http://nnov.hse.ru/en/latna/conferences/nmef2013">Network Models in Economics and Finance</a>, June 13-15, 2013, National Technical University of Athens, Athens, Greece.
+		<p>
+
+		<li> <a href="http://www.fields.utoronto.ca/programs/scientific/11-12/CAIMS_SCMAI/math-in-finance.html">Mathematical Finance theme, 2012 Annual Meeting of the Canadian Applied and Industrial Mathematics Society</a>, June 24-28, 2012, Toronto, Canada.
+		<p>
+
+		<li> <a href="http://www.optimization-in-finance.ca/">Industrial-Academic Workshop on Optimization in Finance and Risk Management</a>, October 3-4, 2011, Fields Institute, Toronto, Canada 
+
+</ul>
+
+
+<hr size=5 color=red noshade>
+<h2>Software-related links</h2>
+
+<ul>
+<li>
+<b><font size=+2><a href=fin-stab.jar>fin-stab.jar</a></font></b> (executable module, save as <b>fin-stab.jar</b> and run on your local computer)
+<p>
+<ul>
+<li> 
+<b>
+Please consult the 
+<a href="simulator-help.html">
+brief explanation of the software (short manual)
+</a> 
+if necessary.
+</b>
+
+<p>
+<li>
+<a href="detailed-help.pdf">
+A somewhat more-detailed manual of the working of the software (PDF file)
+</a>
+</ul>
+
+<p>
+<li>
+<b>
+<A HREF="sample-input-file.txt">
+Format for input file for user-specified networks and a sample input file to play with the software
+</a> 
+</b>
+(text file)
+</ul>
+
+<p>
+
+<hr size=5 color=red noshade>
+
+<h2>Network data related links</h2>
+
+<p>
+
+<ul>
+	<li>
+	<a href="graph-topology-data/index.html">
+	Link to random network data 
+	</a>
+	used in the paper "On Global Stability of Financial Network" by Bhaskar DasGupta and Lakshmi Kaligounder
+</ul>
+
+
+<p>
+
+<hr size=5 color=red noshade>
+
+
+<p class="space">
+<b>
+Copyright (C) 2013 by Bhaskar DasGupta and Lakshmi Kaligounder.
+These programs and data are free software and data; you can redistribute it <font size=+2 color=red>"with proper acknowledgement"</font> under the terms of the
+GNU General Public License as published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+These programs are distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+</b>
+
+<p>
+
+</body>

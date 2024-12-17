@@ -1,0 +1,735 @@
+<html>
+<head>
+<title>Helpfile for the FIN-STAB software</title>
+<META NAME="keywords"
+ CONTENT="Financial networks, OTC markets, stability, loss of assets">
+<style type="text/css"> p.space {line-height:150%;} </style> 
+</head>
+
+<body text="blue" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<font color=blue>
+<font size=+1>
+<font face="sans-serif">
+
+<h1>
+<center>
+<font color=gray>
+<span style="text-decoration:underline;">
+Helpfile for the FIN-STAB software
+</span>
+</font>
+</center>
+</h1>
+
+<p>
+
+<hr size=5 color=yellow noshade>
+<p>
+
+<center>
+	<b>
+	<font size=+2>
+	Notations for few essential finance parameters used by the simulator
+	</font>
+	</b>
+</center>
+
+<p>
+
+<center>
+<table>
+	<col align="right">
+	<col align="center">
+	<col align="left">
+	<col align="center">
+	<col align="right">
+	<col align="center">
+	<col align="left">
+	<col align="center">
+	<col align="right">
+	<col align="center">
+	<col align="left">
+	<tr> <th colspan="3"> </th> <th> </th> <th colspan="3"> </th> <th> </th> <th colspan="3"> </th> </tr>
+	<tr> 
+		<td> 
+			<font size=+2 color=blue>
+			<b><i>
+			E
+			</i></b> 
+			</font>
+		</td> 
+		<td> &nbsp; </td> 
+		<td> 
+			<font size=+2 color=gray>
+			<b>
+			total external asset 
+			</b>
+			</font>
+		</td> 
+		<td> &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+		<td> 
+			<font size=+2 color=blue>
+			<b><i>
+			I
+			</i></b> 
+			</font>
+		</td> 
+		<td> &nbsp; </td> 
+		<td> 
+			<font size=+2 color=gray>
+			<b>
+			total inter-bank exposure 
+			</b>
+			</font>
+		</td> 
+		<td> &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+		<td> 
+			<font size=+2 color=blue>
+			<b><i>
+			&gamma;&isin;(0,1)
+			</i></b> 
+			</font>
+		</td> 
+		<td> &nbsp; </td> 
+		<td> 
+			<font size=+2 color=gray>
+			<b>
+			ratio of equity to asset
+			</b>
+			</font>
+		</td> 
+	</tr>
+
+
+	<tr> 
+		<td> 
+			<font size=+2 color=blue>
+			<b><i>
+		         &Phi;	
+			</i></b> 
+			</font>
+		</td> 
+		<td> &nbsp; </td> 
+		<td> 
+			<font size=+2 color=gray>
+			<b>
+			severity of shock (1 &ge; &Phi; > &gamma;)
+			</b>
+			</font>
+		</td> 
+		<td> &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+		<td> 
+			<font size=+2 color=blue>
+			<b><i>
+		        &Kappa;&isin;(0,100]
+			</i></b> 
+			</font>
+		</td> 
+		<td> &nbsp; </td> 
+		<td> 
+			<font size=+2 color=gray>
+			<b>
+            		percentage of nodes initially shocked 
+			</b>
+			</font>
+		</td> 
+		<td> &nbsp; &nbsp; &nbsp; &nbsp; </td> 
+		<td> 
+			<font size=+2 color=blue>
+			<b><i>
+			</i></b> 
+			</font>
+		</td> 
+		<td> &nbsp; </td> 
+		<td> 
+			<font size=+2 color=gray>
+			<b>
+			</b>
+			</font>
+		</td> 
+	</tr>
+
+</table>
+</center>
+
+
+
+<!--
+-->
+
+
+
+<p>
+<hr size=5 color=yellow noshade>
+<p>
+
+
+<center>
+<font size=+2 color=blue>
+<b>
+Explanations of various software buttons 
+</b>
+</font>
+</center>
+
+<p>
+
+<center>
+<table style="width:100%">
+	<tr>
+		<td align="right">
+			<table style="width:62%"; border="1"> <tr><td><b><font color=green>SF Graph Generation</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+		<td>
+			<font color=green>
+			<b>
+			<p class="space">
+			Generates a homogeneous directed scale-free (SF) financial network model. 
+			Information about the following parameters 
+			will be asked during the graph generation process.
+			</p>
+			<uL>
+				<li>
+				number of nodes (maximum: 1000, minimum: 10, default: 100)
+				<p>
+				<li>
+				average degree (maximum: 6, minimum: 1, default: 3)
+			</uL>
+			</b>
+			</font>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="right">
+			<table style="width:105%"; border="1"> <tr><td><b><font color=black size=+0> Heterogeneous SF Graph Generation</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+		<td>
+			<font color=black>
+			<b>
+			<p class="space">
+			Generates a heterogeneous directed scale-free (SF) financial network model. 
+			Information about the following parameters will be asked during the graph generation process.
+			</p>
+			<uL>
+				<li>
+				number of nodes (maximum: 1000, minimum: 10, default: 100)
+				<p>
+				<li>
+				average degree (maximum: 6, minimum: 1, default: 3)
+				<p>
+				<li>
+				distribution of total asset (two options, (1) distribute 95% assets among 10% nodes and the rest uniformly, or (2) distribute 60% assets among 40% nodes and the rest uniformly; default is (1) )
+			</uL>
+			</b>
+			</font>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="right">
+			<table style="width:62%"; border="1"> <tr><td><b><font color=green size=+0>ER Graph Generation</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+		<td>
+			<font color=green>
+			<b>
+			<p class="space">
+			Generates a homogeneous directed Erd&ouml;s-Ren&eacute;yi (ER) financial network model. 
+			Information about the following parameters 
+			will be asked during the graph generation process.
+			</p>
+			<uL>
+				<li>
+				number of nodes (maximum: 1000, minimum: 10, default: 100)
+				<p>
+				<li>
+				average degree (maximum: 6, minimum: 1, default: 3)
+			</uL>
+			</b>
+			</font>
+		</td>
+
+	<tr>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="right">
+			<table style="width:105%"; border="1"> <tr><td><b><font color=black size=+0>Heterogeneous ER Graph Generation</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+		<td>
+			<font color=black>
+			<b>
+			<p class="space">
+			Generates a heterogeneous directed Erd&ouml;s-Ren&eacute;yi (ER) financial network model. 
+			Information about the following parameters will be asked during the graph generation process.
+			</p>
+			<uL>
+				<li>
+				number of nodes (maximum: 1000, minimum: 10, default: 100)
+				<p>
+				<li>
+				average degree (maximum: 6, minimum: 1, default: 3)
+				<p>
+				<li>
+				distribution of total asset (two options, (1) distribute 95% assets among 10% nodes and the rest uniformly, or (2) distribute 60% assets among 40% nodes and the rest uniformly; default is (1) )
+			</uL>
+			</b>
+			</font>
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="right">
+			<table style="width:92%"; border="1"> <tr><td><b><font color=green size=+0>Inarborescence Tree Generation</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+		<td>
+			<font color=green>
+			<b>
+			<p class="space">
+			Generates a homogeneous in-arborescence tree financial network model using the Barabasi-Albert preferential attachment method. 
+			Information about the following parameters will be asked during the graph generation process.
+			</p>
+			<uL>
+				<li>
+				number of nodes (maximum: 1000, minimum: 10, default: 100)
+			</uL>
+			</b>
+			</font>
+
+			<b>
+			</b>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="right">
+			<table style="width:105%"; border="1"> <tr><td><b><font color=black size=+0>Heterogeneous Inarborescence Tree Generation</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+		<td>
+			<font color=black>
+			<b>
+			<p class="space">
+			Generates a heterogeneous in-arborescence tree financial network model using the Barabasi-Albert preferential attachment method. 
+			Information about the following parameters will be asked during the graph generation process.
+			</p>
+			<uL>
+				<li>
+				number of nodes (maximum: 1000, minimum: 10, default: 100)
+				<p>
+				<li>
+				distribution of total asset (two options, (1) distribute 95% assets among 10% nodes and the rest uniformly, or (2) distribute 60% assets among 40% nodes and the rest uniformly; default is (1) )
+			</uL>
+			</b>
+			</font>
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+
+
+	<tr>
+		<td align="right">
+			<table style="width:57%"; border="1"> <tr><td><b><font color=green size=+0>Idiosyncratic shock</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+
+		<td>
+			<font color=green>
+			<b>
+			<p class="space">
+			Provides an idiosyncratic (uncorrelated random) shock to some nodes in the network on the canvas and shows the effect of the shock on the entire network. 
+			Before shocking, the user will be asked for information about the following parameters:
+			</p>
+			<ul>
+				<li> 
+				severity of shock <i>&Phi;</i> 
+				( 0 &lt; <i>&Phi;</i> &lt; 1, default 0.5 )
+				<p>
+				<li> 
+				ratio of equity to asset <i>&gamma;</i>
+				( 0 &le; <i>&gamma;</i> &lt; <i>&Phi;</i>, default &nbsp; <sup>9</sup>&frasl;<sub>10</sub> &Phi; )
+				<p>
+				<li> 
+				percentage of total external asset to total internal asset &nbsp; <sup><b>E</b></sup>&frasl;<sub><b>I</b></sub>
+				(a positive integer, default 25%)
+				<p>
+				<li> 
+				percentage of nodes initially shocked <i>&Kappa;</i>
+				(a positive integer, default 10%)
+			</ul>
+			By default, the user is shown the failure of banks step by step as the shock propagates. The user also has the option of 
+			<ul>
+				<li>
+				stopping the shock propagation simulation by using the
+				<table style="display:inline-table"; border="1"> <tr><td><b><font color=green size=+0>stop simulation</font><b></td></table> button
+				<p>
+				<li>
+				seeing the final result obtained by propagation of shocks by using the 
+				<table style="display:inline-table"; border="1"> <tr><td><b><font color=green size=+0>skip step-by-step simulation</font><b></td></table> button
+			</ul>
+			</b>
+			</font>
+	</tr>
+
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+
+
+
+	<tr>
+		<td align="right">
+			<table style="width:52%"; border="1"> <tr><td><b><font color=black size=+0>Correlated shock</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+
+		<td>
+			<font color=black>
+			<b>
+			<p class="space">
+			Provides correlated shock to some nodes in the network on the canvas and shows the effect of the shock on the entire network. 
+			Before shocking, the user will be asked for information about the following parameters:
+			</p>
+			<ul>
+				<li> 
+				severity of shock <i>&Phi;</i> 
+				( 0 &lt; <i>&Phi;</i> &lt; 1, default 0.5 )
+				<p>
+				<li> 
+				ratio of equity to asset <i>&gamma;</i>
+				( 0 &le; <i>&gamma;</i> &lt; <i>&Phi;</i>, default &nbsp; <sup>9</sup>&frasl;<sub>10</sub> &Phi; )
+				<p>
+				<li> 
+				percentage of total external asset to total internal asset &nbsp; <sup><b>E</b></sup>&frasl;<sub><b>I</b></sub>
+				(a positive integer, default 25%)
+				<p>
+				<li> 
+				percentage of nodes initially shocked <i>&Kappa;</i>
+				(a positive integer, default 10%)
+			</ul>
+			By default, the user is shown the failure of banks step by step as the shock propagates. The user also has the option of 
+			<ul>
+				<li>
+				stopping the shock propagation simulation by using the
+				<table style="display:inline-table"; border="1"> <tr><td><b><font color=black size=+0>stop simulation</font><b></td></table> button
+				<p>
+				<li>
+				seeing the final result obtained by propagation of shocks by using the 
+				<table style="display:inline-table"; border="1"> <tr><td><b><font color=black size=+0>skip step-by-step simulation</font><b></td></table> button
+			</ul>
+			</b>
+	</tr>
+
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">
+			<table style="width:41%"; border="1"> <tr><td><b><font color=green size=+0>Clear Canvas</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+		<td>
+			<font color=green>
+			<b>
+				Clears the display and discard the currently considered network (if any).
+			</b>
+			</font>
+	</tr>
+
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">
+			<table style="width:105%"; border="1"> <tr><td><b><font color=black size=+0>Directory for Graph Storage/Retrieval</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+		<td>
+			<font color=black>
+			<b>
+				Set the directory for storing or retrieving networks. If not set, default is the current directory.
+			</b>
+			</font>
+	</tr>
+
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+
+
+
+
+
+	<tr>
+		<td align="right">
+			<table style="width:44%"; border="1"> <tr><td><b><font color=green size=+0>Reterive graph</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+		<td>
+			<font color=green>
+			<b>
+				Loads a graph either saved by the user after generation or provided by the user in his/her own input file.
+			</b>
+			</font>
+	</tr>
+
+	<tr>
+		<td align="right">
+		</td>
+		<td>
+			&nbsp; &nbsp;
+		</td>
+		<td>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="right">
+			<table style="width:17%"; border="1"> <tr><td><b><font color=black size=+0>Quit</font><b></td></table>
+		</td>
+		<td>
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+			&nbsp; &nbsp;
+		</td>
+		<td>
+			<font color=black>
+			<b>
+				Quits the software. Be sure to save any data you need before you quit. 
+			</b>
+			</font>
+	</tr>
+
+</table>
+</center>
+
+<p>
+
+
+
+<hr size=5 color=yellow noshade>
+
+<p class="space">
+<b>
+<font color=red>
+Copyright (C) 2013 by Bhaskar DasGupta and Lakshmi Kaligounder.
+This program is free software; you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+</font>
+</b>
+<p>
+
+</body>
