@@ -18,6 +18,13 @@
 
 </HEAD>
 
+<SCRIPT language=JavaScript>
+var message = "function disabled";
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+document.onmousedown = rtclickcheck;
+</SCRIPT>
+
 <BODY LANG="EN">
 
 <TITLE>List of Publications of Bhaskar DasGupta</TITLE>
