@@ -1,0 +1,156 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>Program and Data files</TITLE>
+
+<meta name="Author" content="">
+
+<style type="text/css">
+	p {font : normal 14pt sans-serif ; }
+	p {line-height : 150% ; }
+	ul {font : normal 13pt sans-serif ; }
+	ul {line-height : 200% ; }
+	dl {line-height : 200% ; }
+	dl {font : normal 13pt sans-serif ; }
+	center {line-height : 200% ; }
+	center {font : normal 13pt sans-serif ; }
+	tr {line-height : 200% ; }
+	tr {font : normal 13pt sans-serif ; }
+</style>
+</HEAD>
+
+
+<script type="text/javascript">
+  function blink() {
+    var blinks = document.getElementsByTagName('blink');
+    for (var i = blinks.length - 1; i >= 0; i--) {
+      var s = blinks[i];
+      s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+    }
+    window.setTimeout(blink, 400);
+  }
+  if (document.addEventListener) document.addEventListener("DOMContentLoaded", blink, false);
+  else if (window.addEventListener) window.addEventListener("load", blink, false);
+  else if (window.attachEvent) window.attachEvent("onload", blink);
+  else window.onload = blink;
+</script>
+
+<SCRIPT language=JavaScript>
+var message = "function disabled";
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+document.onmousedown = rtclickcheck;
+</SCRIPT>
+
+
+<BODY> 
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+
+<hr size=5 color=blue noshade>
+
+<center style="font-family:Garamond,sans-serif;font-size:16pt;font-weight:800">
+<font color=black>
+<b>
+Program and Data files for the paper 
+<br>
+Prithviraj Sengupta, Nazanin Azarhooshang, R&eacute;ka Albert and Bhaskar DasGupta 
+<br>
+<i>Finding Influential Cores via Normalized Ricci Flows in Directed and Undirected Hypergraphs with Applications</i>
+<br>
+to appear in Physical Review E
+</b>
+</font>
+</center>
+
+<hr size=5 color=blue noshade>
+
+<p style="font-family:Garamond,sans-serif;font-size:14pt;font-weight:600">
+<ul>
+<li>
+The source codes for our implementation are available at <a href="http://github.com/iamprith/Ricci-Flow-on-Hypergraphs">http://github.com/iamprith/Ricci-Flow-on-Hypergraphs</a>
+
+<p style="font-family:Garamond,sans-serif;font-size:14pt;font-weight:600">
+
+<li>
+The data for the metabolic networks are available freely from the repository 
+<a href="http://bigg.ucsd.edu/">
+BiGG Models 
+</a>
+(see the referring paper 
+<a href="http://doi.org/10.1093/nar/gkv1049">
+Bigg models: A platform for integrating, standardizing and sharing genome-scale models 
+</a>
+for further details)
+
+
+<p style="font-family:Garamond,sans-serif;font-size:14pt;font-weight:600">
+
+<li>
+For co-authorship networks, for the 
+<font color=red> 
+CSP dataset 
+</font>
+the three papers selected are:
+
+<Blockquote>
+<ol>
+<li>
+S. Goldwasser and S. Micali, Probabilistic encryption, Journal of Computer and System Sciences 28, 270 (1984)
+<li>
+R. M. Karp, Reducibility among combinatorial problems, in Complexity of Computer Computations: Proceedings of a symposium on the Complexity of Computer Computations, edited by R. E. Miller, J. W. Thatcher, and J. D. Bohlinger (Springer US, Boston, MA, 1972) pp. 85–103
+<li>
+N. Nisan and A. Wigderson, Hardness vs randomness, Journal of Computer and System Sciences 49, 149 (1994)
+</ol>
+</Blockquote>
+
+
+and, for the 
+<font color=red> 
+NSP dataset 
+</font>
+the three papers selected are:
+
+<Blockquote>
+<ol type="A">
+<li>
+A.-L. Barabasi and R. Albert, Emergence of scaling in random networks, Science 286, 509 (1999)
+<li>
+M. Girvan and M. E. J. Newman, Community structure in social and biological networks, Proceedings of the National Academy of Sciences 99, 7821 (2002)
+<li>
+D.Watts and S. Strogatz, Collective dynamics of ‘smallworld’ networks, Nature 393, 440 (1998)
+</ol>
+</Blockquote>
+
+
+For each dataset the following procedure was used. We had selected a specific number of the most cited papers that cite papers 1-3 and papers A-C (900 for papers 1-3, 582 for papers A-C). Then, we built a undirected hypergraph out of these papers and found the biggest connected component.
+
+<p style="font-family:Garamond,sans-serif;font-size:14pt;font-weight:600">
+<ul>
+<li>
+<a href="csp.csv">
+Click here to download the csv file for the biggest connected component for the CSP dataset
+</a>
+
+<li>
+<a href="nsp.csv">
+Click here to download the csv file for the biggest connected component for the NSP dataset 
+</a>
+</ul>
+
+The above csv files have a column for the paper name, authors, citation count etc.
+</ul>
+
+<hr size=5 color=red noshade>
+
+<font color=red> 
+<p style="font-family:Garamond,sans-serif;font-size:14pt;font-weight:600">
+Copyright (C) 2025 by Prithviraj Sengupta, Nazanin Azarhooshang, R&eacute;ka Albert and Bhaskar DasGupta. These programs and data are free software and data; you can redistribute it "with proper acknowledgement" under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. These programs are distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+</font> 
+
+<hr size=5 color=red noshade>
+
+
+</BODY>
+</HTML>
