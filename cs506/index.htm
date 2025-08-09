@@ -19,6 +19,18 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <!-- for latex math ends-->
 
+<SCRIPT language=JavaScript>
+
+var message = "function disabled";
+
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+
+document.onmousedown = rtclickcheck;
+
+</SCRIPT>
+
 </head>
 
 <body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
