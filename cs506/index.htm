@@ -252,7 +252,7 @@ We will design efficient algorithms that can be run by quantum computers, contra
 quantum computers with that of classical computational models, analyze algorithms written for quantum computers, and 
 measure the efficiency of quantum algorithms. Apart from mathematical and quantum mechanics preliminaries, major 
 topics will include computing framework of quantum mechanics, quantum computational models, quantum teleportation, 
-and quantum algorithms such as Deutsch and Deutsch-Jozsa algorithms, Grover’s quantum search algorithm and Shor’s factoring algorithms.
+and quantum algorithms such as Deutsch and Deutsch-Jozsa algorithms, Grover'ss quantum search algorithm and Shor's factoring algorithms.
 
 <li style="font-family:Garamond,sans-serif;font-size:15pt;font-weight:600">
 Prerequisite: &nbsp;&nbsp;CS 401 or equivalent
@@ -330,9 +330,11 @@ Phase kick-back
 <li>
 Deutsch and Deutsch-Jozsa algorithms
 <li>
-Grover’s quantum search algorithm 
+Simon's algorithm and generalized Simon's problem
 <li>
-Shor’s factoring algorithms
+Grover's quantum search algorithm 
+<li>
+Shor's factoring algorithms
 </ol>
 
 <li>
@@ -728,6 +730,7 @@ v_{p,q}=
 .
 </font>
 <p>
+-->
 
 
 
@@ -736,17 +739,26 @@ v_{p,q}=
 <li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
 <font color=black>
 <b>
-Problem #2 (Due date: October 5 2023, in class) 
+Problem #2 (Due date: September 30 2025, in class) 
+[level of difficulty: <i>easy</i>]
 </b>
+This exercise shows that a trace of a matrix can be written in terms of any arbitrary basis vectors.
 </font>
 <p>
 
+<dl>
+  <dt>
+	(a)
+	</dt>
+  <dd>
 Show that for any two \(n\times n\) matrices X and Y the following holds: 
 \[
 Tr(XY) = Tr(YX) 
 \]
 where Tr(A) denotes the trace (sum of diagonal elements) of a square matrix A.
+  </dd>
 
+<!--
 <p>
 <font color=black>
 <b>
@@ -773,26 +785,17 @@ Tr(YX)
 \).
 </font>
 <p>
+-->
 
 
-
-
-
-
-<li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
-<font color=black>
-<b>
-Problem #3 (Due date: October 5 2023, in class) 
-</b>
-</font>
-<p>
-
-Using the results proved in Problem 1 and Problem 2, 
+  <dt>
+	(b)
+	</dt>
+  <dd>
+Using the results proved in Problem 1(b) and Problem 2(a), 
 prove the following result.
 Let 
--->
 <!--A=[<i>a</i><sub><i>i</i>,<i>j</i></sub>]<sub>1&le;<i>i</i>&le;<i>n</i>,1&le;<i>j</i>&le;<i>n</i></sub>-->
-<!--
 \(A\) 
 be any <i>n</i>&#10761;<i>n</i> matrix, and let 
 |<i>b<sub>1</sub></i>&#12297;,
@@ -800,8 +803,7 @@ be any <i>n</i>&#10761;<i>n</i> matrix, and let
 &#8943;
 |<i>b<sub>n</sub></i>&#12297;
 be 
-<b>any</b> set of orthonormal basis vectors.--> <!-- for the <i>n</i>-dimensional Hilbert space \(\mathcal{H}^n\).-->
-<!--
+<b>any</b> set of orthonormal basis vectors.<!-- for the <i>n</i>-dimensional Hilbert space \(\mathcal{H}^n\).-->
 Show that we can write the <i>trace</i> of the matrix A, denoted by 
 <i>Tr</i>(A), as 
 <br> 
@@ -812,6 +814,7 @@ Tr(A) = \sum_{i=1}^n \langle b_i | A | b_i \rangle
 \]
 </b>
 
+<!--
 Hint: 
 If 
 |<i>b<sub>1</sub></i>&#12297;,
