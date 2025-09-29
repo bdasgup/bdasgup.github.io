@@ -664,12 +664,66 @@ for all
 </dl>
 
 
-<!--
 <p>
 <font color=black>
 <b>
 Solution:
 </b>
+<br> 
+<b>
+(a) 
+</b>
+The \(i\)<sup>th</sup> row of the matrix \(U\) is 
+\(
+| c_i \rangle
+\)
+<br> 
+<b>
+(b) 
+</b>
+Let 
+\(
+| a_1 \rangle,
+| a_2 \rangle,
+\dots,
+| a_n \rangle
+\)
+be the standard (computational) basis vector. 
+Using the result in 
+<b>
+(a) 
+</b>
+there exists unitary matrices 
+\(U_1\)
+and 
+\(U_2\)
+such that 
+\(
+| a_i \rangle = U_1 
+| b_i \rangle
+\)
+and 
+\(
+| a_i \rangle = U_2 
+| c_i \rangle
+\)
+for all \(i\).
+Then 
+\(
+|b_i\rangle = 
+U_1^{-1}U_2 |c_i\rangle
+=
+U_1^{\dagger}U_2 |c_i\rangle
+=
+U |c_i\rangle
+\)
+for all \(i\), where 
+\(
+U=U_1^{\dagger}U_2 
+\)
+is an unitary matrix.
+
+<!--
 Let 
 \(
 | b_i \rangle 
@@ -751,6 +805,9 @@ v_{p,q}=
 
 
 
+<br>
+<br>
+<br>
 
 <li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
 <font color=black>
@@ -884,8 +941,44 @@ where
 \(U U^{\dagger}\) is equal to the identity matrix \(I\) since \(U\) is unitary.
 </font>
 <p>
+-->
+
+<br>
+<br>
+<br>
+
+<li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
+<font color=black>
+<b>
+Problem #3 (Due date: October 8 2025, in class) 
+[level of difficulty: <i>easy</i>]
+</b>
+<p>
+While discussing quantum teleportation in class, we stated the following equality without proof: 
+\[
+| \psi \rangle | \beta_{00} \rangle = 
+\frac{1}{2} | \beta_{00} \rangle | \psi \rangle
++
+\frac{1}{2} | \beta_{01} \rangle X ( | \psi \rangle )
++
+\frac{1}{2} | \beta_{10} \rangle Z ( | \psi \rangle )
++
+\frac{1}{2} | \beta_{11} \rangle X Z ( | \psi \rangle )
+\]
+where
+\( | \psi \rangle | \) 
+is an arbitrary 1-qubit and 
+\(
+\beta_{00},
+\beta_{01},
+\beta_{10},
+\beta_{11}
+\)
+are the Bell basis vectors for a 2-qubit system. Prove the equality.
 
 
+
+<!--
 <li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
 <font color=black>
 <b>
