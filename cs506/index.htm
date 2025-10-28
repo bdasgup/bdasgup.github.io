@@ -1101,9 +1101,47 @@ and thus
 </font>
 <p>
 
+<li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
+<font color=black>
+<b>
+Problem #5 (Due date: November 5 2025, in class) 
+[level of difficulty: <i>easy/moderate</i>]
+</b>
+</font>
+<p>
 
+In the class we discuss how to estimate the periodicity \(r\) of 
+\(
+| \Phi \rangle= \frac{1}{\sqrt{m}} \displaystyle \sum_{z=0}^{m-1} | z r + x_0 \rangle 
+\)
+by taking \(\mbox{QFT}_{2^n}\) of \(\Phi\) and observing the resulting quantum state.
+In this regard, show that when \(m=\frac{2^n}{r}\) is an integer the following equality holds:
+\[
+\mbox{QFT}_{2^n}
+| \Phi \rangle \stackrel{def}{=} 
+\mbox{QFT}_{2^n} \left(
+\frac{1}{\sqrt{m}} \displaystyle \sum_{z=0}^{m-1} | z r + x_0 \rangle 
+\right)
+=
+\frac{1}{r} \sum_{k=0}^{r-1} e^{2 \pi i \frac{x_0}{r} k} |mk\rangle
+\]
 
-
+<p>
+<i>Hint</i>:
+Actually, this follows from the proofs in the class, but how? An alternate direct way to show this is to 
+locate each term of the right side in the left side and using the fact that 
+\(
+||
+\mbox{QFT}_{2^n}
+| \Phi \rangle 
+|| 
+=
+||
+\frac{1}{r} \sum_{k=0}^{r-1} e^{2 \pi i \frac{x_0}{r} k} |mk\rangle
+||
+=1
+\)
+.
 
 <!--
 
