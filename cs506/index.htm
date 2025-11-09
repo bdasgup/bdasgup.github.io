@@ -581,6 +581,10 @@ Lecture notes by students
 <b>10/29/2025: <a href="CS-506-10-29-2025.pdf">Click here</a> (Scribe: Kazi Shahrukh Omar)</b>
 <p>
 
+<li style="font-family:Garamond,sans-serif;font-size:15pt;font-weight:600">
+<b>11/5/2025: <a href="CS-506-11-5-2025.pdf">Click here</a> (Scribe: Shri Krishna)</b>
+<p>
+
 
 
 </ul>
@@ -1140,7 +1144,8 @@ In this regard, show that when \(m=\frac{2^n}{r}\) is an integer the following e
 
 <p>
 <i>Hint</i>:
-Actually, this follows from the proofs in the class, but how? An alternate direct way to show this is to 
+Actually, this follows from the proofs in the class, but how? 
+An alternate direct way to show this is to 
 locate each term of the right side in the left side and using the fact that 
 \(
 ||
@@ -1154,6 +1159,153 @@ locate each term of the right side in the left side and using the fact that
 =1
 \)
 .
+
+<p>
+<font color=black>
+<b>
+Solution:
+</b>
+Here is a solution based on what was proved in class regarding the estimation of periodicity of a function. 
+As shown in class,  
+\[
+\mbox{QFT}_{2^n} \left(
+\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1} | z r + x_0 \rangle 
+\right)
+=
+\sum_{y=0}^{2^n-1} \left( 
+\frac{1}{\sqrt{2^n m}} \sum_{k=0}^{m-1}
+e^{2\pi i (x_0+kr) y / 2^n} | y \rangle
+\right)
+=
+\sum_{y=0}^{2^n-1} \left( 
+\frac{1}{\sqrt{2^n m}} 
+\,
+e^{2\pi i x_0 y / 2^n} 
+\sum_{k=0}^{m-1}
+e^{2\pi i kr y / 2^n} | y \rangle
+\right)
+\]
+Doing further simplification, we get
+\[
+\sum_{y=0}^{2^n-1} \left( 
+\frac{1}{\sqrt{2^n m}} 
+\,
+e^{2\pi i x_0 y / 2^n} 
+\sum_{k=0}^{m-1}
+e^{2\pi i kr y / 2^n} | y \rangle
+\right)
+=
+\sum_{y=0}^{2^n-1} \left( 
+e^{2\pi i x_0 y / 2^n} 
+\,
+\frac{1}{\sqrt{r}} \, 
+\left(
+\frac{1}{m}
+\sum_{k=0}^{m-1}
+e^{2\pi i k y / m} 
+\right)
+| y \rangle
+\right)
+\]
+In the class, we showed that 
+\(
+\frac{1}{m}
+\sum_{k=0}^{m-1}
+e^{2\pi i k y / m} 
+= 
+\begin{cases}
+1, & \mbox{if $y=\lambda\times \frac{2^n}{r}$ for some integer $\lambda\geq 0$} 
+\\
+0, & \mbox{otherwise}
+\end{cases}
+\)
+.
+Thus, we get
+\[
+\sum_{y=0}^{2^n-1} \left( 
+e^{2\pi i x_0 y / 2^n} 
+\,
+\frac{1}{\sqrt{r}} \, 
+\left(
+\frac{1}{m}
+\sum_{k=0}^{m-1}
+e^{2\pi i k y / m} 
+\right)
+| y \rangle
+\right)
+=
+\sum_{y: y=\lambda\times \frac{2^n}{r} } \left( 
+e^{2\pi i x_0 y / 2^n} 
+\,
+\frac{1}{\sqrt{r}} \, 
+| y \rangle
+\right)
+=
+\frac{1}{\sqrt{r}} \, 
+\sum_{\lambda=0}^{r-1}
+e^{2\pi i x_0 \lambda / r} 
+| \lambda m \rangle
+\]
+An alternate direct way to show this is as follows.
+Consider an arbitrary term 
+\(
+e^{2\pi i x_0 \lambda / r} 
+| \lambda m \rangle
+\)
+in the summation of the right side.
+The term corresponding to 
+\( y = \lambda m \)
+in the summation of the left side is 
+\(
+\frac{1}{\sqrt{2^n m}} \sum_{k=0}^{m-1}
+e^{2\pi i (x_0+kr) \lambda m / 2^n} 
+| \lambda m \rangle
+=
+\frac{1}{m\sqrt{r}} \sum_{k=0}^{m-1}
+e^{2\pi i (x_0+kr) \lambda / r} 
+| \lambda m \rangle
+=
+\frac{1}{m\sqrt{r}} \sum_{k=0}^{m-1}
+e^{2\pi i x_0 \lambda / r} 
+| \lambda m \rangle
+=
+\frac{1}{\sqrt{r}}
+e^{2\pi i x_0 \lambda / r} 
+| \lambda m \rangle
+\)
+. 
+Thus, every term on the right side is also a term on the left side. Consequently, the left side can be written 
+as 
+\(
+\left(\frac{1}{\sqrt{r}} \, 
+\sum_{\lambda=0}^{r-1}
+e^{2\pi i x_0 \lambda / r} 
+| \lambda m \rangle
+\right)
++ \Delta
+\),
+for some \(\Delta\). Since 
+\(
+||
+\left(\frac{1}{\sqrt{r}} \, 
+\sum_{\lambda=0}^{r-1}
+e^{2\pi i x_0 \lambda / r} 
+| \lambda m \rangle
+\right)
++ \Delta
+||
+=
+||
+\frac{1}{\sqrt{r}} \, 
+\sum_{\lambda=0}^{r-1}
+e^{2\pi i x_0 \lambda / r} 
+| \lambda m \rangle
+||
+=1
+\), 
+it follows that 
+\( \Delta=0 \). 
+
 
 
 <p>
