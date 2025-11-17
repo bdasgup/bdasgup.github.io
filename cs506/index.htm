@@ -1322,7 +1322,15 @@ e^{2\pi i x_0 \lambda / r}
 | \lambda m \rangle
 ||
 =1
-\), 
+\)
+and 
+\(
+| 0 \rangle,
+| 1 \rangle,
+\dots,
+| 2^n-1 \rangle
+\)
+are a set of basis vectors for the underlying space, 
 it follows that 
 \( \Delta=0 \). 
 
@@ -1360,12 +1368,163 @@ e^{2\pi i \frac{2^q}{2^n} z} | z \rangle
 \end{cases}
 \]
 
+<p>
+<font color=black>
+<b>
+Solution:
+</b>
+Note that 
+\(
+| 0 \rangle,
+| 1 \rangle,
+\dots,
+| 2^n-1 \rangle
+\)
+are a set of basis vectors for the underlying space.
+Since 
+\( \mbox{QFT}_{2^n}\) is a quantum operator (as evidenced by the quantum circuit for it given in class), 
+there exists an unitary matrix \(U\) of size \(2^n\times 2^n\) for it (for the curious, 
+the \( (k,\ell)^{\mathrm{th}}\) entry of \(U\) is 
+\(
+\frac{1}{\sqrt{2^n}} e^{2\pi i \frac{k}{2^n} \ell}
+\)).
+It is easy to see that 
+\(
+|b_1\rangle=U | 0 \rangle,
+|b_2\rangle=U | 1 \rangle,
+\dots,
+|b_{2^n-1}\rangle=U | 2^n-1 \rangle
+\)
+form a set of basis vectors since 
+\(
+\langle b_r | b_s \rangle =
+\langle r | U^{\dagger} U  | s \rangle = \langle r | s\rangle
+=
+\begin{cases}
+1 , & \mbox{if } r=s
+\\
+0 , & \mbox{otherwise}
+\end{cases}
+\).
+It now follows that 
+\[
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
+e^{2\pi i \frac{2^p}{2^n} y} | y \rangle
+\right)^{\dagger}
+\times 
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
+e^{2\pi i \frac{2^q}{2^n} z} | z \rangle
+\right)
+=
+\langle b^{2^p} | b^{2^q} \rangle =
+\begin{cases}
+1 , & \mbox{if } p=q
+\\
+0 , & \mbox{otherwise}
+\end{cases}
+\]
+Another way to prove this is by direct multiplication: 
+\[
+\begin{array}{r c l}
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
+e^{2\pi i \frac{2^p}{2^n} y} | y \rangle
+\right)^{\dagger}
+\times 
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
+e^{2\pi i \frac{2^q}{2^n} z} | z \rangle
+\right)
+&
+=
+&
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
+e^{-2\pi i \frac{2^p}{2^n} y} \langle y |
+\right)
+\times 
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
+e^{2\pi i \frac{2^q}{2^n} z} | z \rangle
+\right)
+\\
+&
+=
+&
+\frac{1}{2^n}
+\sum_{s=0}^{2^n-1}
+e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) s} 
+\end{array}
+\]
+If \(p=q\) then obviously 
+\(
+\frac{1}{2^n}
+\sum_{s=0}^{2^n-1}
+e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) s} 
+=1
+\).
+On the other hand, 
+if \(p\neq q\) then 
+\( e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) } \neq 1\)
+and 
+\[
+\textstyle
+\frac{1}{2^n}
+\sum_{s=0}^{2^n-1}
+e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) s} 
+=
+\frac{1}{2^n}
+\times
+\frac
+{
+\left( e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) } \right)^{2^n} -1  
+}
+{
+e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) } -1
+}
+=
+\frac{1}{2^n}
+\times
+\frac
+{
+e^{2\pi i \left( 2^q-2^p \right) } -1  
+}
+{
+e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) } -1
+}
+=
+0
+\]
+
+
+
+<li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
+<font color=black>
+<b>
+Problem #7 (Due date: November 24 2025, in class) 
+[level of difficulty: <i>easy/medium</i>]
+</b>
+</font>
+<p>
+
+Suppose that we have a function \(f:\{0,1\}^n \mapsto \{0,1\}\) 
+that computes, for some fixed unknown \(\overrightarrow{r}\in\{0,1\}^n\), 
+the value 
+\(f(\overrightarrow{x})=\overrightarrow{x}\cdot\overrightarrow{r} \pmod{2}\)
+for every input \(\overrightarrow{x}\in\{0,1\}^n\) (here "\(\cdot\)" denote the
+dot product of two vectors). Show how we can find \(\overrightarrow{r}\) 
+using a <b>single</b> query to \(f\).
+
+<p>
+<i>Hint</i>: 
+Look at the proofs of Deutsch-Josza problem. Remember that the Hadamard gate \(H\) is 
+its self-inverse, <i>i.e.</i>, \(H(H|\psi\rangle)=|\psi\rangle\). 
 
 
 
 <!--
-
-
 
 <li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
 <font color=black>
