@@ -609,6 +609,9 @@ Lecture notes by students
 <b>11/12/2025: <a href="CS-506-11-12-2025.pdf">Click here</a> (Scribe: Nidhi Ravishankar Jois)</b>
 <p>
 
+<li style="font-family:Garamond,sans-serif;font-size:15pt;font-weight:600">
+<b>11/17/2025: <a href="CS-506-11-17-2025.pdf">Click here</a> (Scribe: Brian Rosca)</b>
+<p>
 
 
 </ul>
@@ -1523,9 +1526,53 @@ using a <b>single</b> query to \(f\).
 
 <p>
 <i>Hint</i>: 
-Look at the proofs of Deutsch-Josza problem. Remember that the Hadamard gate \(H\) is 
+Look at the proofs of Deutsch-Jozsa problem. Remember that the Hadamard gate \(H\) is 
 its self-inverse, <i>i.e.</i>, \(H(H|\psi\rangle)=|\psi\rangle\). 
 
+<p>
+<font color=black>
+<b>
+Solution:
+</b>
+Note that 
+\[
+\begin{eqnarray}
+U_f \left( H^{\otimes n} \left( |0^n\rangle \right) \frac{|0\rangle + |1\rangle}{\sqrt{2}}  \right) & = &
+\frac{1}{\sqrt{2^n}} \sum_{z\in\{0,1\}^n} U_f \left( |z\rangle \left( \frac{|0\rangle + |1\rangle}{\sqrt{2}} \right)\right)
+\\
+&
+=
+&
+\frac{1}{\sqrt{2^n}} \sum_{z\in\{0,1\}^n} (-1)^{f(z)} |z\rangle \left( \frac{|0\rangle + |1\rangle}{\sqrt{2}} \right)
+\\
+&
+=
+&
+\frac{1}{\sqrt{2^n}} \sum_{z\in\{0,1\}^n} (-1)^{z \cdot r \pmod{2} } |z\rangle \left( \frac{|0\rangle + |1\rangle}{\sqrt{2}} \right)
+\end{eqnarray}
+\]
+In the class we saw that 
+\(
+H^{\otimes n} |r\rangle = 
+\frac{1}{\sqrt{2^n}} \sum_{z\in\{0,1\}^n} (-1)^{z \cdot r \pmod{2} } |z\rangle
+\)
+for any 
+\(
+r\in\{0,1\}^n
+\)
+.
+Thus, 
+\(
+H^{\otimes n} 
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{z\in\{0,1\}^n} (-1)^{z \cdot r \pmod{2} } |z\rangle
+\right)
+=
+H^{\otimes n} 
+H^{\otimes n} |r\rangle = 
+| r \rangle
+\)
+.
 
 
 <!--
