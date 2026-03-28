@@ -657,6 +657,16 @@ Harsh Shelke)</b>
 <p>
 
 
+<li style="font-family:Garamond,sans-serif;font-size:15pt;font-weight:600">
+<b>3/26/2026: 
+Quantum Fourier Transform and Phase Estimation
+<a href="CS-506-3-26-2026.pdf">Click here</a> (Scribe: 
+Om Ravindra Sali)</b>
+<p>
+
+
+
+
 
 </ul>
 
@@ -1128,9 +1138,9 @@ then with such-and-such probability the algorithm decides that
 is constant"
 </blockquote>
 
+<p>
 
 <!--
-<p>
 <font color=black>
 <b>
 Solution:
@@ -1189,7 +1199,172 @@ and thus
 </ul>
 
 </font>
+-->
 <p>
+
+<li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
+<font color=black>
+<b>
+Problem #5 (Due date: April 6 2026, in class) 
+[level of difficulty: <i>easy</i>]
+</b>
+</font>
+<p>
+
+The main purpose of this exercise is to make you feel comfortable with the calculations that we do in class.
+Show that 
+
+\[
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
+e^{2\pi i \frac{p}{2^n} y} | y \rangle
+\right)^{\dagger}
+\times 
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
+e^{2\pi i \frac{q}{2^n} z} | z \rangle
+\right)
+=
+\begin{cases}
+1 , & \mbox{if } p=q
+\\
+0 , & \mbox{otherwise}
+\end{cases}
+\]
+
+<!--
+<p>
+<font color=black>
+<b>
+Solution:
+</b>
+Note that 
+\(
+| 0 \rangle,
+| 1 \rangle,
+\dots,
+| 2^n-1 \rangle
+\)
+are a set of basis vectors for the underlying space.
+Since 
+\( \mbox{QFT}_{2^n}\) is a quantum operator (as evidenced by the quantum circuit for it given in class), 
+there exists an unitary matrix \(U\) of size \(2^n\times 2^n\) for it (for the curious, 
+the \( (k,\ell)^{\mathrm{th}}\) entry of \(U\) is 
+\(
+\frac{1}{\sqrt{2^n}} e^{2\pi i \frac{k}{2^n} \ell}
+\)).
+It is easy to see that 
+\(
+|b_1\rangle=U | 0 \rangle,
+|b_2\rangle=U | 1 \rangle,
+\dots,
+|b_{2^n-1}\rangle=U | 2^n-1 \rangle
+\)
+form a set of basis vectors since 
+\(
+\langle b_r | b_s \rangle =
+\langle r | U^{\dagger} U  | s \rangle = \langle r | s\rangle
+=
+\begin{cases}
+1 , & \mbox{if } r=s
+\\
+0 , & \mbox{otherwise}
+\end{cases}
+\).
+It now follows that 
+\[
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
+e^{2\pi i \frac{p}{2^n} y} | y \rangle
+\right)^{\dagger}
+\times 
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
+e^{2\pi i \frac{q}{2^n} z} | z \rangle
+\right)
+=
+\langle b^{p} | b^{q} \rangle =
+\begin{cases}
+1 , & \mbox{if } p=q
+\\
+0 , & \mbox{otherwise}
+\end{cases}
+\]
+Another way to prove this is by direct multiplication: 
+\[
+\begin{array}{r c l}
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
+e^{2\pi i \frac{p}{2^n} y} | y \rangle
+\right)^{\dagger}
+\times 
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
+e^{2\pi i \frac{q}{2^n} z} | z \rangle
+\right)
+&
+=
+&
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
+e^{-2\pi i \frac{p}{2^n} y} \langle y |
+\right)
+\times 
+\left(
+\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
+e^{2\pi i \frac{q}{2^n} z} | z \rangle
+\right)
+\\
+&
+=
+&
+\frac{1}{2^n}
+\sum_{s=0}^{2^n-1}
+e^{2\pi i \left( \frac{q-p}{2^n} \right) s} 
+\end{array}
+\]
+If \(p=q\) then obviously 
+\(
+\frac{1}{2^n}
+\sum_{s=0}^{2^n-1}
+e^{2\pi i \left( \frac{q-p}{2^n} \right) s} 
+=1
+\).
+On the other hand, 
+if \(p\neq q\) then 
+\( e^{2\pi i \left( \frac{q-p}{2^n} \right) } \neq 1\)
+and 
+\[
+\textstyle
+\frac{1}{2^n}
+\sum_{s=0}^{2^n-1}
+e^{2\pi i \left( \frac{q-p}{2^n} \right) s} 
+=
+\frac{1}{2^n}
+\times
+\frac
+{
+\left( e^{2\pi i \left( \frac{q-p}{2^n} \right) } \right)^{2^n} -1  
+}
+{
+e^{2\pi i \left( \frac{q-p}{2^n} \right) } -1
+}
+=
+\frac{1}{2^n}
+\times
+\frac
+{
+e^{2\pi i \left( q-p \right) } -1  
+}
+{
+e^{2\pi i \left( \frac{q-p}{2^n} \right) } -1
+}
+=
+0
+\]
+
+
+
 
 <li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
 <font color=black>
@@ -1389,170 +1564,9 @@ it follows that
 \( \Delta=0 \). 
 
 
+-->
 
-<p>
-
-<li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
-<font color=black>
-<b>
-Problem #6 (Due date: November 12 2025, in class) 
-[level of difficulty: <i>easy</i>]
-</b>
-</font>
-<p>
-
-The main purpose of this exercise is to make you feel comfortable with the calculations that we do in class.
-Show that 
-
-\[
-\left(
-\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
-e^{2\pi i \frac{2^p}{2^n} y} | y \rangle
-\right)^{\dagger}
-\times 
-\left(
-\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
-e^{2\pi i \frac{2^q}{2^n} z} | z \rangle
-\right)
-=
-\begin{cases}
-1 , & \mbox{if } p=q
-\\
-0 , & \mbox{otherwise}
-\end{cases}
-\]
-
-<p>
-<font color=black>
-<b>
-Solution:
-</b>
-Note that 
-\(
-| 0 \rangle,
-| 1 \rangle,
-\dots,
-| 2^n-1 \rangle
-\)
-are a set of basis vectors for the underlying space.
-Since 
-\( \mbox{QFT}_{2^n}\) is a quantum operator (as evidenced by the quantum circuit for it given in class), 
-there exists an unitary matrix \(U\) of size \(2^n\times 2^n\) for it (for the curious, 
-the \( (k,\ell)^{\mathrm{th}}\) entry of \(U\) is 
-\(
-\frac{1}{\sqrt{2^n}} e^{2\pi i \frac{k}{2^n} \ell}
-\)).
-It is easy to see that 
-\(
-|b_1\rangle=U | 0 \rangle,
-|b_2\rangle=U | 1 \rangle,
-\dots,
-|b_{2^n-1}\rangle=U | 2^n-1 \rangle
-\)
-form a set of basis vectors since 
-\(
-\langle b_r | b_s \rangle =
-\langle r | U^{\dagger} U  | s \rangle = \langle r | s\rangle
-=
-\begin{cases}
-1 , & \mbox{if } r=s
-\\
-0 , & \mbox{otherwise}
-\end{cases}
-\).
-It now follows that 
-\[
-\left(
-\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
-e^{2\pi i \frac{2^p}{2^n} y} | y \rangle
-\right)^{\dagger}
-\times 
-\left(
-\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
-e^{2\pi i \frac{2^q}{2^n} z} | z \rangle
-\right)
-=
-\langle b^{2^p} | b^{2^q} \rangle =
-\begin{cases}
-1 , & \mbox{if } p=q
-\\
-0 , & \mbox{otherwise}
-\end{cases}
-\]
-Another way to prove this is by direct multiplication: 
-\[
-\begin{array}{r c l}
-\left(
-\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
-e^{2\pi i \frac{2^p}{2^n} y} | y \rangle
-\right)^{\dagger}
-\times 
-\left(
-\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
-e^{2\pi i \frac{2^q}{2^n} z} | z \rangle
-\right)
-&
-=
-&
-\left(
-\frac{1}{\sqrt{2^n}} \sum_{y=0}^{2^n-1}
-e^{-2\pi i \frac{2^p}{2^n} y} \langle y |
-\right)
-\times 
-\left(
-\frac{1}{\sqrt{2^n}} \sum_{z=0}^{2^n-1}
-e^{2\pi i \frac{2^q}{2^n} z} | z \rangle
-\right)
-\\
-&
-=
-&
-\frac{1}{2^n}
-\sum_{s=0}^{2^n-1}
-e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) s} 
-\end{array}
-\]
-If \(p=q\) then obviously 
-\(
-\frac{1}{2^n}
-\sum_{s=0}^{2^n-1}
-e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) s} 
-=1
-\).
-On the other hand, 
-if \(p\neq q\) then 
-\( e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) } \neq 1\)
-and 
-\[
-\textstyle
-\frac{1}{2^n}
-\sum_{s=0}^{2^n-1}
-e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) s} 
-=
-\frac{1}{2^n}
-\times
-\frac
-{
-\left( e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) } \right)^{2^n} -1  
-}
-{
-e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) } -1
-}
-=
-\frac{1}{2^n}
-\times
-\frac
-{
-e^{2\pi i \left( 2^q-2^p \right) } -1  
-}
-{
-e^{2\pi i \left( \frac{2^q-2^p}{2^n} \right) } -1
-}
-=
-0
-\]
-
-
+<!--
 
 <li style="font-family:"Times New Roman";font-size:15pt;font-weight:600">
 <font color=black>
